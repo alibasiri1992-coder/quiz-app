@@ -1,6 +1,6 @@
 let questions=[];
 //گرفتن سوالات از سرور
-fetch("http://localhost:3000/api/questions")
+fetch("https://quiz-app-sim9.onrender.com/api/questions")
 .then(function(response){
     return response.json();
 })

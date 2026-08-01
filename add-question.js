@@ -15,7 +15,7 @@ form.addEventListener("submit", function (event) {
         correct: document.getElementById("correct-answer").value
     };
 
-    fetch("http://localhost:3000/api/questions", {
+    fetch("https://quiz-app-sim9.onrender.com/api/questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newQuestion)
