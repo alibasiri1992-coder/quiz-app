@@ -49,6 +49,6 @@ app.post("/api/questions", (req, res) => {
 
 });
 
-app.listen(3000, () => {
-    console.log("سرور روی پورت 3000 در حال اجراست");
+app.listen(process.env.PORT || 3000, () => {
+    console.log("سرور در حال اجراست");
 });
