@@ -1,0 +1,110 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #758A93;
+    margin: 0;
+    padding: 0;
+}
+.container{
+width: 600px;
+margin: 100px auto;
+background-color: #ede9e6;
+padding: 30px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+
+}
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:100%;
+    padding:12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E9B63B;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: stretch;
+    }
+    button:hover{
+        background-color:rgba(159,200.126,0.3) ;
+    }
+    .ans{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .progress-container{
+        width: 100%;
+        height: 10px;
+        background-color: #a3a3a3;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    #progress-bar{
+        height: 100%;
+        width: 0%;
+        background-color: #4caf50;
+        transition: width 0.7s ease;
+    }
+    .add-qus{
+        display: inline-block;
+        width: 150px;
+        padding: 10px 20px;
+    }
+    body.dark-mode{
+        background-color: #252542;
+        color: #f0f0f0;
+    }
+    body.dark-mode .container{
+        background-color: #1b294f;
+
+    }
+    body.dark-mode button{
+        background-color: #0f3460;
+        color: #f0f0f0;
+    }
+    .theme-btn{
+        width: 150px;
+        align-self: auto;
+    }
+  .fade-out {
+    animation: fadeOut 0.8ُs ease forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media (max-width: 650px) {
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+}
+#score-circle {
+    transition: stroke-dashoffset 1s ease;
+}

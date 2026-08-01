@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>quiz</title>
+  </head>
+  <body>
+    <button id="theme-toggle" class="theme-btn"> حالت تاریک🌙</button>
+    
+   <div class="container">
+
+    
+
+    <div id="welcome-screen">
+        <h2>به آزمون خوش آمدید</h2>
+        <h3>در این آزمون چند سوال از شما پرسیده می‌شود، آماده‌اید؟</h3>
+        <br><br>
+         <p>سطح دشواری را انتخاب کنید:</p>
+
+    <button class="difficulty-btn" data-level="easy">آسون</button>
+    <button class="difficulty-btn" data-level="medium">متوسط</button>
+    <button class="difficulty-btn" data-level="hard">سخت</button>
+
+    <br><br>
+        <button id="start-btn">شروع آزمون</button>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+        <center>
+            <h2>آزمون آنلاین</h2>
+            <br>
+        </center>
+        <p id="question-counter"></p>
+        <p id="timer"></p>
+        <br>
+        <h3><div class="qus" id="question"></div></h3>
+        <div class="answers" id="answers"></div>
+        <br><br>
+        <button id="next-btn">سوال بعدی</button>
+        <br><br>
+        <button id="restart-btn" style="display: none;">شروع دوباره</button>
+     <br>
+     <br>
+        
+     <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+     
+        <button class="add-qus" onclick="window.location.href='add-question.html'">افزودن سوال جدید</button>
+     
+      </div>
+
+    <br>
+    <br>
+   
+</div>
+     <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+[
+  {
+    "question": "پایتخت ایران چیست؟",
+    "answers": [
+      "شیراز",
+      "مشهد",
+      "تهران",
+      "تبریز"
+      
+    ],
+    "correct": "تهران",
+    "difficulty": "hard"
+    
+  },
+  {
+    "question": "2 + 2 چند می‌شود؟",
+    "answers": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": "4",
+    "difficulty": "easy"
+  },
+  {
+    "question": "رنگ آسمان چیست؟",
+    "answers": [
+      "قرمز",
+      "سبز",
+      "آبی",
+      "زرد"
+    ],
+    "correct": "آبی",
+    "difficulty": "easy"
+  },
+  {
+    "question": "شرکت دوج محصول کدام کشور است؟",
+    "answers": [
+      "آمریکا",
+      "آلمان",
+      "ایران",
+      "انگلیس"
+    ],
+    "correct": "آمریکا",
+    "difficulty": "hard"
+  },
+  {
+    "question": "حروف الفبا چند حرف دارد",
+    "answers": [
+      "32",
+      "35",
+      "33",
+      "31"
+    ],
+    "correct": "32",
+    "difficulty": "medium"
+  },
+  {
+    "question": "سال چند ماه دارد؟",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "12"
+    ],
+    "correct": "12",
+    "difficulty": "easy"
+  }
+]

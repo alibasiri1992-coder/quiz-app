@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افزودن سوال جدید</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>افزودن سوال جدید</h2>
+
+        <form id="add-question-form">
+            <input type="text" id="new-question" placeholder="متن سوال" required><br><br>
+            <input type="text" id="answer1" placeholder="گزینه ۱" required><br><br>
+            <input type="text" id="answer2" placeholder="گزینه ۲" required><br><br>
+            <input type="text" id="answer3" placeholder="گزینه ۳" required><br><br>
+            <input type="text" id="answer4" placeholder="گزینه ۴" required><br><br>
+            <input type="text" id="correct-answer" placeholder="جواب درست (دقیقاً مثل یکی از گزینه‌ها)" required><br><br>
+            <button type="submit">اضافه کردن سوال</button>
+        </form>
+
+        <p id="form-message"></p>
+
+        <button class="add-qus" onclick="window.location.href='index.html'">بازگشت به آزمون</button>
+
+    </div>
+
+    <script src="add-question.js"></script>
+
+</body>
+
+</html>
