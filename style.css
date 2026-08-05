@@ -110,7 +110,7 @@ button{
         cursor: not-allowed;
     }
   .fade-out {
-    animation: fadeOut 0.8ُs ease forwards;
+    animation: fadeOut 0.8s ease forwards;
 }
 
 .fade-in {
