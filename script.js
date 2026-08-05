@@ -12,25 +12,13 @@ const API_URL = isLocal
     ? "http://localhost:3000/api/questions"
     : "https://quiz-app-sim9.onrender.com/api/questions";
 
-//گرفتن سوالات از سرور
-fetch(API_URL)
-.then(function(response){
-    return response.json();
-})
-.then(function(data){
-    allQuestions=data;
-    //showQuestion();
-})
-.catch(function(error){
-alert("خطا در گرفتن سولات")
-});
-
 // ==========================
 // متغیرها
 // ==========================
 
 let currentQuestion = 0;
 let score = 0;
+let questionsLoaded = false; // تا وقتی fetch تموم نشده، false می‌مونه
 
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
@@ -51,6 +39,28 @@ let selectedCategory = "general";
 let allQuestions = [];
 let timeLeft;
 let timerInterval;
+
+// تا وقتی سوالات از سرور نرسیدن، دکمه‌ی شروع غیرفعاله
+// (این خط جلوی مشکلی رو می‌گیره که رو نت کند - مثلاً موبایل - کاربر زودتر از رسیدن جواب سرور کلیک می‌کنه)
+const originalStartText = startButton.textContent;
+startButton.disabled = true;
+startButton.textContent = "در حال بارگذاری سوالات...";
+
+//گرفتن سوالات از سرور
+fetch(API_URL)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    allQuestions=data;
+    questionsLoaded = true;
+    startButton.disabled = false;
+    startButton.textContent = originalStartText;
+})
+.catch(function(error){
+    startButton.textContent = "خطا در بارگذاری - صفحه رو تازه کن";
+    alert("خطا در گرفتن سولات");
+});
 
 
 // به‌هم‌ریختن تصادفی یک آرایه (الگوریتم Fisher-Yates) و برگرداندن یک آرایه‌ی جدید
@@ -103,6 +113,11 @@ themeToggle.addEventListener("click", function () {
     }
 });
 startButton.addEventListener("click", function () {
+
+    // ایمنی اضافه: حتی اگه به هر دلیلی دکمه فعال بود ولی دیتا نرسیده، اجازه‌ی ادامه نده
+    if (!questionsLoaded) {
+        return;
+    }
 
     const filtered = allQuestions.filter(function (q) {
         return q.difficulty === selectedDifficulty && q.category === selectedCategory;
