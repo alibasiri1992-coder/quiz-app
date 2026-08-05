@@ -1,6 +1,16 @@
 const form = document.getElementById("add-question-form");
 const messageElement = document.getElementById("form-message");
 
+// همون منطق تشخیص لوکال/Render که تو script.js هست، اینجا هم می‌ذاریم
+// تا وقتی رو لوکال تست می‌کنی، فرم به سرور لوکالت وصل بشه نه به Render
+const isLocal = location.hostname === "localhost"
+    || location.hostname === "127.0.0.1"
+    || location.protocol === "file:";
+
+const API_URL = isLocal
+    ? "http://localhost:3000/api/questions"
+    : "https://quiz-app-sim9.onrender.com/api/questions";
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -12,10 +22,12 @@ form.addEventListener("submit", function (event) {
             document.getElementById("answer3").value,
             document.getElementById("answer4").value
         ],
-        correct: document.getElementById("correct-answer").value
+        correct: document.getElementById("correct-answer").value,
+        category: document.getElementById("new-category").value,
+        difficulty: document.getElementById("new-difficulty").value
     };
 
-    fetch("https://quiz-app-sim9.onrender.com/api/questions", {
+    fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newQuestion)
