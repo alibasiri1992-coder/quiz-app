@@ -1,0 +1,2870 @@
+[
+  {
+    "category": "general",
+    "question": "بلندترین کوه جهان کدام است؟",
+    "answers": ["دماوند", "اورست", "آلپ", "کلیمانجارو"],
+    "correct": "اورست",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره به سیاره سرخ معروف است؟",
+    "answers": ["زهره", "مشتری", "مریخ", "عطارد"],
+    "correct": "مریخ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "چند روز در یک هفته وجود دارد؟",
+    "answers": ["5", "6", "7", "8"],
+    "correct": "7",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام حیوان بزرگ‌ترین پستاندار جهان است؟",
+    "answers": ["فیل", "نهنگ آبی", "زرافه", "کرگدن"],
+    "correct": "نهنگ آبی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "اولین ماه سال شمسی کدام است؟",
+    "answers": ["اردیبهشت", "فروردین", "اسفند", "خرداد"],
+    "correct": "فروردین",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "چند دقیقه در یک ساعت وجود دارد؟",
+    "answers": ["30", "45", "60", "90"],
+    "correct": "60",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین قاره جهان کدام است؟",
+    "answers": ["اروپا", "آفریقا", "آسیا", "آمریکا"],
+    "correct": "آسیا",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "نماد شیمیایی طلا چیست؟",
+    "answers": ["Ag", "Au", "Fe", "Pt"],
+    "correct": "Au",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام پرنده توانایی تقلید صدای انسان را دارد؟",
+    "answers": ["کبوتر", "کلاغ", "طوطی", "شاهین"],
+    "correct": "طوطی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین اقیانوس جهان کدام است؟",
+    "answers": ["اطلس", "هند", "منجمد جنوبی", "آرام"],
+    "correct": "آرام",
+    "difficulty": "easy"
+  },
+
+  {
+    "category": "general",
+    "question": "پایتخت فرانسه چیست؟",
+    "answers": ["رم", "برلین", "پاریس", "مادرید"],
+    "correct": "پاریس",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین سیاره منظومه شمسی کدام است؟",
+    "answers": ["مریخ", "زحل", "مشتری", "زمین"],
+    "correct": "مشتری",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "آب در چند درجه سانتی‌گراد یخ می‌زند؟",
+    "answers": ["0", "10", "32", "100"],
+    "correct": "0",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "طولانی‌ترین رود جهان کدام است؟",
+    "answers": ["آمازون", "نیل", "کارون", "دانوب"],
+    "correct": "نیل",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "قاره ایران کدام است؟",
+    "answers": ["اروپا", "آسیا", "آفریقا", "اقیانوسیه"],
+    "correct": "آسیا",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام حیوان به سلطان جنگل معروف است؟",
+    "answers": ["ببر", "پلنگ", "شیر", "گرگ"],
+    "correct": "شیر",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "خورشید از کدام سمت طلوع می‌کند؟",
+    "answers": ["شمال", "جنوب", "شرق", "غرب"],
+    "correct": "شرق",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین اقیانوس جهان کدام است؟",
+    "answers": ["هند", "منجمد شمالی", "آرام", "اطلس"],
+    "correct": "آرام",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "هر سال معمولی چند روز دارد؟",
+    "answers": ["364", "365", "366", "360"],
+    "correct": "365",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "نماد شیمیایی اکسیژن چیست؟",
+    "answers": ["Ox", "O", "Og", "Oc"],
+    "correct": "O",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "اولین انسان که روی ماه قدم گذاشت چه کسی بود؟",
+    "answers": ["یوری گاگارین", "نیل آرمسترانگ", "باز آلدرین", "مایکل کالینز"],
+    "correct": "نیل آرمسترانگ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "چند قاره روی کره زمین وجود دارد؟",
+    "answers": ["5", "6", "7", "8"],
+    "correct": "7",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین حیوان خشکی کدام است؟",
+    "answers": ["اسب", "فیل آفریقایی", "کرگدن", "زرافه"],
+    "correct": "فیل آفریقایی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام فلز به صورت مایع در دمای اتاق است؟",
+    "answers": ["جیوه", "آهن", "مس", "آلومینیوم"],
+    "correct": "جیوه",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "مرکز کشور ژاپن کدام شهر است؟",
+    "answers": ["اوساکا", "کیوتو", "توکیو", "هیروشیما"],
+    "correct": "توکیو",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام رنگ از ترکیب آبی و زرد به دست می‌آید؟",
+    "answers": ["بنفش", "سبز", "نارنجی", "صورتی"],
+    "correct": "سبز",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره به حلقه‌های زیبای خود مشهور است؟",
+    "answers": ["زحل", "مریخ", "زمین", "نپتون"],
+    "correct": "زحل",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "چند ثانیه در یک دقیقه وجود دارد؟",
+    "answers": ["30", "45", "60", "90"],
+    "correct": "60",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "پایتخت ایتالیا کدام شهر است؟",
+    "answers": ["رم", "میلان", "ونیز", "ناپل"],
+    "correct": "رم",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین اندام داخلی بدن انسان چیست؟",
+    "answers": ["قلب", "ریه", "کبد", "مغز"],
+    "correct": "کبد",
+    "difficulty": "easy"
+  },
+  {
+    "category": "general",
+    "question": "کدام عنصر بیشترین درصد از جو زمین را تشکیل می‌دهد؟",
+    "answers": ["اکسیژن", "نیتروژن", "هیدروژن", "دی‌اکسید کربن"],
+    "correct": "نیتروژن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور بیشترین جمعیت جهان را در سال ۲۰۲۶ دارد؟",
+    "answers": ["چین", "هند", "آمریکا", "اندونزی"],
+    "correct": "هند",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "واحد اندازه‌گیری شدت جریان الکتریکی چیست؟",
+    "answers": ["ولت", "وات", "آمپر", "اهم"],
+    "correct": "آمپر",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور به سرزمین آفتاب تابان مشهور است؟",
+    "answers": ["چین", "کره جنوبی", "ژاپن", "تایلند"],
+    "correct": "ژاپن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "اولین ماه قمری کدام است؟",
+    "answers": ["رمضان", "محرم", "رجب", "صفر"],
+    "correct": "محرم",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین بیابان گرم جهان کدام است؟",
+    "answers": ["گبی", "صحرای آفریقا", "کالاهاری", "لوت"],
+    "correct": "صحرای آفریقا",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام زبان بیشترین تعداد گویشور بومی را در جهان دارد؟",
+    "answers": ["انگلیسی", "اسپانیایی", "چینی ماندارین", "هندی"],
+    "correct": "چینی ماندارین",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "قدیمی‌ترین دانشگاه جهان که هنوز فعال است، در کدام کشور قرار دارد؟",
+    "answers": ["ایتالیا", "مراکش", "انگلیس", "فرانسه"],
+    "correct": "مراکش",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره بیشترین تعداد قمر شناخته‌شده را دارد؟",
+    "answers": ["مشتری", "زحل", "اورانوس", "نپتون"],
+    "correct": "زحل",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "نماد شیمیایی عنصر نقره چیست؟",
+    "answers": ["Ag", "Au", "Hg", "Pb"],
+    "correct": "Ag",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "بزرگ‌ترین اقیانوس جهان از نظر مساحت کدام است؟",
+    "answers": ["اطلس", "هند", "آرام", "منجمد شمالی"],
+    "correct": "آرام",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام دانشمند قانون جاذبه عمومی را مطرح کرد؟",
+    "answers": ["آلبرت اینشتین", "گالیله", "اسحاق نیوتن", "نیکولا تسلا"],
+    "correct": "اسحاق نیوتن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "واحد اندازه‌گیری فرکانس چیست؟",
+    "answers": ["ولت", "ژول", "هرتز", "نیوتن"],
+    "correct": "هرتز",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور بیشترین تعداد جزیره را در جهان دارد؟",
+    "answers": ["اندونزی", "ژاپن", "سوئد", "فیلیپین"],
+    "correct": "سوئد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "اولین عنصر جدول تناوبی چیست؟",
+    "answers": ["اکسیژن", "هلیم", "هیدروژن", "لیتیم"],
+    "correct": "هیدروژن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "بلندترین آبشار جهان چه نام دارد؟",
+    "answers": ["نیاگارا", "آنجل", "ایگواسو", "ویکتوریا"],
+    "correct": "آنجل",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره نزدیک‌ترین سیاره به خورشید است؟",
+    "answers": ["زهره", "زمین", "عطارد", "مریخ"],
+    "correct": "عطارد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام گاز عامل اصلی ایجاد اثر گلخانه‌ای طبیعی در جو زمین است؟",
+    "answers": ["هیدروژن", "دی‌اکسید کربن", "اکسیژن", "هلیوم"],
+    "correct": "دی‌اکسید کربن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "پایتخت کشور کانادا کدام شهر است؟",
+    "answers": ["تورنتو", "ونکوور", "اتاوا", "مونترال"],
+    "correct": "اتاوا",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام فلز بهترین رسانای الکتریسیته است؟",
+    "answers": ["طلا", "آلومینیوم", "مس", "نقره"],
+    "correct": "نقره",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام دانشمند نظریه نسبیت را ارائه کرد؟",
+    "answers": ["اسحاق نیوتن", "آلبرت اینشتین", "گالیله", "استیون هاوکینگ"],
+    "correct": "آلبرت اینشتین",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور به عنوان مهد بازی‌های المپیک شناخته می‌شود؟",
+    "answers": ["ایتالیا", "یونان", "مصر", "ترکیه"],
+    "correct": "یونان",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "عدد اتمی عنصر کربن چند است؟",
+    "answers": ["4", "5", "6", "8"],
+    "correct": "6",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره به «ستاره صبح» نیز معروف است؟",
+    "answers": ["مریخ", "زهره", "عطارد", "مشتری"],
+    "correct": "زهره",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور بیشترین تعداد همسایه را در جهان دارد؟",
+    "answers": ["روسیه", "برزیل", "چین", "آلمان"],
+    "correct": "چین",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "واحد اندازه‌گیری توان الکتریکی چیست؟",
+    "answers": ["ولت", "وات", "آمپر", "اهم"],
+    "correct": "وات",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام قاره هیچ بیابان گرم بزرگی ندارد؟",
+    "answers": ["اروپا", "آسیا", "آفریقا", "استرالیا"],
+    "correct": "اروپا",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام گاز بیشترین سهم را در فرایند فتوسنتز گیاهان دارد؟",
+    "answers": ["اکسیژن", "نیتروژن", "دی‌اکسید کربن", "هیدروژن"],
+    "correct": "دی‌اکسید کربن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "نویسنده رمان «بینوایان» چه کسی است؟",
+    "answers": ["الکساندر دوما", "ویکتور هوگو", "چارلز دیکنز", "ژول ورن"],
+    "correct": "ویکتور هوگو",
+    "difficulty": "medium"
+  },
+  {
+    "category": "general",
+    "question": "کدام اقیانوس بین قاره‌های آفریقا، آسیا و استرالیا قرار دارد؟",
+    "answers": ["اطلس", "آرام", "هند", "منجمد جنوبی"],
+    "correct": "هند",
+    "difficulty": "medium"
+  },
+
+
+  {
+    "category": "general",
+    "question": "کدام عنصر بیشترین رسانایی گرمایی را در میان فلزات دارد؟",
+    "answers": ["مس", "طلا", "نقره", "آلومینیوم"],
+    "correct": "نقره",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور بیشترین تعداد منطقه زمانی رسمی را دارد؟",
+    "answers": ["آمریکا", "روسیه", "فرانسه", "کانادا"],
+    "correct": "فرانسه",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "عدد آووگادرو تقریباً برابر با کدام مقدار است؟",
+    "answers": [
+      "6.02×10^23",
+      "9.81×10^9",
+      "3.14×10^8",
+      "1.60×10^-19"
+    ],
+    "correct": "6.02×10^23",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام قاره تنها یک کشور مستقل دارد؟",
+    "answers": ["اروپا", "اقیانوسیه", "آمریکای جنوبی", "استرالیا"],
+    "correct": "استرالیا",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "قدیمی‌ترین تمدن شناخته‌شده جهان در کدام منطقه شکل گرفت؟",
+    "answers": ["بین‌النهرین", "دره سند", "مصر", "چین"],
+    "correct": "بین‌النهرین",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره کمترین چگالی را در منظومه شمسی دارد؟",
+    "answers": ["مشتری", "اورانوس", "زحل", "نپتون"],
+    "correct": "زحل",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "نام بلندترین رشته‌کوه خشکی جهان چیست؟",
+    "answers": ["آند", "هیمالیا", "آلپ", "راکى"],
+    "correct": "آند",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام عنصر بیشترین فراوانی را در خورشید دارد؟",
+    "answers": ["هلیم", "اکسیژن", "هیدروژن", "کربن"],
+    "correct": "هیدروژن",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "واحد نجومی (AU) تقریباً برابر با فاصله متوسط بین کدام دو جرم آسمانی است؟",
+    "answers": [
+      "زمین و ماه",
+      "خورشید و زمین",
+      "خورشید و مریخ",
+      "زمین و زهره"
+    ],
+    "correct": "خورشید و زمین",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام دانشمند برای نخستین بار جدول تناوبی عناصر را بر پایه خواص شیمیایی تنظیم کرد؟",
+    "answers": [
+      "جان دالتون",
+      "دمیتری مندلیف",
+      "نیلز بور",
+      "آنتوان لاوازیه"
+    ],
+    "correct": "دمیتری مندلیف",
+    "difficulty": "hard"
+  },
+
+  {
+    "category": "general",
+    "question": "کدام دانشمند برای نخستین بار شعاع زمین را با استفاده از اختلاف زاویه تابش خورشید محاسبه کرد؟",
+    "answers": ["ارشمیدس", "ارسطو", "اراتوستن", "بطلمیوس"],
+    "correct": "اراتوستن",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "سخت‌ترین ماده طبیعی شناخته‌شده چیست؟",
+    "answers": ["کوارتز", "الماس", "گرافیت", "یاقوت"],
+    "correct": "الماس",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "اولین عنصر مصنوعی جدول تناوبی کدام است؟",
+    "answers": ["پلوتونیوم", "نپتونیم", "تکنسیم", "فرانسیم"],
+    "correct": "تکنسیم",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام اقیانوس کوچک‌ترین اقیانوس جهان است؟",
+    "answers": ["منجمد شمالی", "هند", "اطلس", "آرام"],
+    "correct": "منجمد شمالی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "در دستگاه SI، واحد اندازه‌گیری شدت روشنایی چیست؟",
+    "answers": ["لوکس", "لومن", "کاندلا", "نیت"],
+    "correct": "کاندلا",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره بیشترین جرم را در منظومه شمسی دارد؟",
+    "answers": ["زحل", "زمین", "مشتری", "نپتون"],
+    "correct": "مشتری",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "قدیمی‌ترین اقیانوس زمین از نظر زمین‌شناسی کدام است؟",
+    "answers": ["اطلس", "هند", "منجمد شمالی", "آرام"],
+    "correct": "آرام",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "نام فرآیندی که گیاهان با استفاده از نور خورشید غذا تولید می‌کنند چیست؟",
+    "answers": ["تخمیر", "تنفس سلولی", "فتوسنتز", "اسمز"],
+    "correct": "فتوسنتز",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور بیشترین تعداد آتشفشان فعال را در جهان دارد؟",
+    "answers": ["ژاپن", "اندونزی", "شیلی", "آمریکا"],
+    "correct": "اندونزی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام فلز در دمای اتاق بیشترین رسانایی الکتریکی را دارد؟",
+    "answers": ["نقره", "مس", "طلا", "آلومینیوم"],
+    "correct": "نقره",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام دانشمند برای نخستین بار وجود الکترون را به صورت آزمایشگاهی اثبات کرد؟",
+    "answers": [
+      "ارنست رادرفورد",
+      "جوزف جان تامسون",
+      "نیلز بور",
+      "جیمز چادویک"
+    ],
+    "correct": "جوزف جان تامسون",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام سیاره کمترین زمان گردش به دور خورشید را دارد؟",
+    "answers": [
+      "زهره",
+      "زمین",
+      "عطارد",
+      "مریخ"
+    ],
+    "correct": "عطارد",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "نخستین عنصر گروه گازهای نجیب کدام است؟",
+    "answers": [
+      "نئون",
+      "آرگون",
+      "هلیم",
+      "کریپتون"
+    ],
+    "correct": "هلیم",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "واحد اندازه‌گیری مقاومت الکتریکی چیست؟",
+    "answers": [
+      "وات",
+      "ولت",
+      "اهم",
+      "آمپر"
+    ],
+    "correct": "اهم",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام کشور طولانی‌ترین خط ساحلی جهان را دارد؟",
+    "answers": [
+      "روسیه",
+      "کانادا",
+      "استرالیا",
+      "آمریکا"
+    ],
+    "correct": "کانادا",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام عنصر بیشترین درصد جرم بدن انسان را پس از اکسیژن تشکیل می‌دهد؟",
+    "answers": [
+      "کربن",
+      "هیدروژن",
+      "نیتروژن",
+      "کلسیم"
+    ],
+    "correct": "کربن",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "نام لایه‌ای از جو زمین که بیشتر شهاب‌سنگ‌ها در آن می‌سوزند چیست؟",
+    "answers": [
+      "تروپوسفر",
+      "استراتوسفر",
+      "مزوسفر",
+      "ترموسفر"
+    ],
+    "correct": "مزوسفر",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام دانشمند نوترون را کشف کرد؟",
+    "answers": [
+      "جیمز چادویک",
+      "نیلز بور",
+      "جوزف تامسون",
+      "ارنست رادرفورد"
+    ],
+    "correct": "جیمز چادویک",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "پایین‌ترین نقطه خشکی‌های زمین در کنار کدام دریا قرار دارد؟",
+    "answers": [
+      "دریای خزر",
+      "دریای سیاه",
+      "دریای مرده",
+      "دریای سرخ"
+    ],
+    "correct": "دریای مرده",
+    "difficulty": "hard"
+  },
+  {
+    "category": "general",
+    "question": "کدام فلز بیشترین نقطه ذوب را در میان فلزات خالص دارد؟",
+    "answers": [
+      "تنگستن",
+      "تیتانیوم",
+      "پلاتین",
+      "مولیبدن"
+    ],
+    "correct": "تنگستن",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "CPU در کامپیوتر چه وظیفه‌ای دارد؟",
+    "answers": [
+      "ذخیره اطلاعات",
+      "پردازش اطلاعات",
+      "نمایش تصویر",
+      "اتصال به اینترنت"
+    ],
+    "correct": "پردازش اطلاعات",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام وسیله برای وارد کردن متن به کامپیوتر استفاده می‌شود؟",
+    "answers": [
+      "مانیتور",
+      "کیبورد",
+      "اسپیکر",
+      "پرینتر"
+    ],
+    "correct": "کیبورد",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه وظیفه نمایش تصاویر را بر عهده دارد؟",
+    "answers": [
+      "ماوس",
+      "مانیتور",
+      "هارد دیسک",
+      "مودم"
+    ],
+    "correct": "مانیتور",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه یک سیستم‌عامل است؟",
+    "answers": [
+      "Microsoft Word",
+      "Windows",
+      "Google Chrome",
+      "Adobe Photoshop"
+    ],
+    "correct": "Windows",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام وسیله برای حرکت دادن نشانگر روی صفحه استفاده می‌شود؟",
+    "answers": [
+      "اسکنر",
+      "ماوس",
+      "پرینتر",
+      "وب‌کم"
+    ],
+    "correct": "ماوس",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه محل ذخیره دائمی اطلاعات است؟",
+    "answers": [
+      "RAM",
+      "CPU",
+      "هارد دیسک",
+      "کارت گرافیک"
+    ],
+    "correct": "هارد دیسک",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "مرورگر Google Chrome برای چه کاری استفاده می‌شود؟",
+    "answers": [
+      "ویرایش عکس",
+      "مرور صفحات وب",
+      "ساخت فایل PDF",
+      "اجرای بازی"
+    ],
+    "correct": "مرور صفحات وب",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام حافظه با خاموش شدن کامپیوتر اطلاعات خود را از دست می‌دهد؟",
+    "answers": [
+      "SSD",
+      "هارد دیسک",
+      "RAM",
+      "فلش مموری"
+    ],
+    "correct": "RAM",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "فایل‌های حذف‌شده در ویندوز ابتدا به کدام قسمت منتقل می‌شوند؟",
+    "answers": [
+      "Downloads",
+      "Recycle Bin",
+      "Documents",
+      "Task Manager"
+    ],
+    "correct": "Recycle Bin",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید معمولاً برای حذف کاراکتر سمت راست مکان‌نما استفاده می‌شود؟",
+    "answers": [
+      "Backspace",
+      "Delete",
+      "Insert",
+      "Esc"
+    ],
+    "correct": "Delete",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای کپی کردن متن در ویندوز استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + X",
+      "Ctrl + C",
+      "Ctrl + V",
+      "Ctrl + Z"
+    ],
+    "correct": "Ctrl + C",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای چسباندن (Paste) متن استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + V",
+      "Ctrl + P",
+      "Ctrl + S",
+      "Ctrl + A"
+    ],
+    "correct": "Ctrl + V",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "HTML مخفف چیست؟",
+    "answers": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": "Hyper Text Markup Language",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "CSS بیشتر برای چه کاری استفاده می‌شود؟",
+    "answers": [
+      "طراحی ظاهر صفحات وب",
+      "مدیریت پایگاه داده",
+      "ساخت سیستم عامل",
+      "برنامه‌نویسی سخت‌افزار"
+    ],
+    "correct": "طراحی ظاهر صفحات وب",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "JavaScript بیشتر در کدام بخش استفاده می‌شود؟",
+    "answers": [
+      "ایجاد تعامل در صفحات وب",
+      "ویرایش عکس",
+      "ساخت فایل PDF",
+      "نصب ویندوز"
+    ],
+    "correct": "ایجاد تعامل در صفحات وب",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه یک مرورگر وب است؟",
+    "answers": [
+      "Windows",
+      "Google Chrome",
+      "Microsoft Word",
+      "Adobe Illustrator"
+    ],
+    "correct": "Google Chrome",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "پسوند فایل‌های HTML چیست؟",
+    "answers": [
+      ".css",
+      ".js",
+      ".html",
+      ".exe"
+    ],
+    "correct": ".html",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام زبان برای استایل‌دهی صفحات وب استفاده می‌شود؟",
+    "answers": [
+      "Java",
+      "CSS",
+      "Python",
+      "SQL"
+    ],
+    "correct": "CSS",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام دستور در JavaScript برای نمایش پیام در کنسول استفاده می‌شود؟",
+    "answers": [
+      "print()",
+      "echo()",
+      "console.log()",
+      "show()"
+    ],
+    "correct": "console.log()",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام شرکت سیستم‌عامل Windows را توسعه داده است؟",
+    "answers": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Intel"
+    ],
+    "correct": "Microsoft",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه یک موتور جستجو است؟",
+    "answers": [
+      "Windows",
+      "Google",
+      "Word",
+      "Photoshop"
+    ],
+    "correct": "Google",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "وظیفه اصلی RAM چیست؟",
+    "answers": [
+      "ذخیره دائمی اطلاعات",
+      "اجرای موقت برنامه‌ها و نگهداری داده‌های در حال استفاده",
+      "اتصال به اینترنت",
+      "پردازش تصویر"
+    ],
+    "correct": "اجرای موقت برنامه‌ها و نگهداری داده‌های در حال استفاده",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر یک حافظه ذخیره‌سازی قابل حمل است؟",
+    "answers": [
+      "RAM",
+      "فلش مموری",
+      "CPU",
+      "مانیتور"
+    ],
+    "correct": "فلش مموری",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "برای ذخیره کردن یک فایل در اکثر برنامه‌های ویندوز از چه کلید میانبری استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + D",
+      "Ctrl + S",
+      "Ctrl + F",
+      "Ctrl + N"
+    ],
+    "correct": "Ctrl + S",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه یک نرم‌افزار صفحه‌گسترده (Spreadsheet) است؟",
+    "answers": [
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Paint",
+      "Notepad"
+    ],
+    "correct": "Microsoft Excel",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام پسوند معمولاً مربوط به فایل‌های JavaScript است؟",
+    "answers": [
+      ".java",
+      ".js",
+      ".json",
+      ".css"
+    ],
+    "correct": ".js",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام تگ در HTML برای ایجاد لینک استفاده می‌شود؟",
+    "answers": [
+      "<img>",
+      "<a>",
+      "<p>",
+      "<div>"
+    ],
+    "correct": "<a>",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام ویژگی CSS برای تغییر رنگ متن استفاده می‌شود؟",
+    "answers": [
+      "background-color",
+      "font-size",
+      "color",
+      "text-align"
+    ],
+    "correct": "color",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "در JavaScript برای تعریف یک متغیر می‌توان از کدام کلمه کلیدی استفاده کرد؟",
+    "answers": [
+      "let",
+      "style",
+      "link",
+      "class"
+    ],
+    "correct": "let",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای مشاهده کد یک صفحه وب در مرورگر کاربرد دارد؟",
+    "answers": [
+      "View Source",
+      "Print",
+      "Downloads",
+      "History"
+    ],
+    "correct": "View Source",
+    "difficulty": "easy"
+  },
+  {
+    "category": "computer",
+    "question": "کدام حافظه معمولاً سرعت بیشتری دارد؟",
+    "answers": [
+      "HDD",
+      "SSD",
+      "DVD",
+      "فلش دیسک"
+    ],
+    "correct": "SSD",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام شرکت سیستم‌عامل اندروید را توسعه می‌دهد؟",
+    "answers": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Intel"
+    ],
+    "correct": "Google",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام مرورگر توسط Mozilla توسعه داده شده است؟",
+    "answers": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Safari"
+    ],
+    "correct": "Firefox",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "پسوند فایل‌های PDF چیست؟",
+    "answers": [
+      ".docx",
+      ".pdf",
+      ".txt",
+      ".ppt"
+    ],
+    "correct": ".pdf",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام نرم‌افزار برای ساخت فایل‌های ارائه (Presentation) استفاده می‌شود؟",
+    "answers": [
+      "Excel",
+      "PowerPoint",
+      "Paint",
+      "Access"
+    ],
+    "correct": "PowerPoint",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "وظیفه اصلی آنتی‌ویروس چیست؟",
+    "answers": [
+      "افزایش سرعت اینترنت",
+      "حذف و جلوگیری از بدافزارها",
+      "ساخت فایل PDF",
+      "فشرده‌سازی فایل‌ها"
+    ],
+    "correct": "حذف و جلوگیری از بدافزارها",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه اطلاعات را به صورت دائمی ذخیره می‌کند؟",
+    "answers": [
+      "RAM",
+      "CPU",
+      "SSD",
+      "Cache"
+    ],
+    "correct": "SSD",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای بازگرداندن آخرین عمل (Undo) استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + Y",
+      "Ctrl + Z",
+      "Ctrl + R",
+      "Ctrl + U"
+    ],
+    "correct": "Ctrl + Z",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای اتصال بی‌سیم به اینترنت در لپ‌تاپ استفاده می‌شود؟",
+    "answers": [
+      "Bluetooth",
+      "Wi-Fi",
+      "HDMI",
+      "USB"
+    ],
+    "correct": "Wi-Fi",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر یک سرویس ذخیره‌سازی ابری است؟",
+    "answers": [
+      "Google Drive",
+      "Paint",
+      "Notepad",
+      "Calculator"
+    ],
+    "correct": "Google Drive",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای انتخاب همه متن یا فایل‌ها استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + C",
+      "Ctrl + A",
+      "Ctrl + X",
+      "Ctrl + F"
+    ],
+    "correct": "Ctrl + A",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "وظیفه اصلی مودم چیست؟",
+    "answers": [
+      "چاپ اسناد",
+      "اتصال به اینترنت",
+      "ذخیره اطلاعات",
+      "نمایش تصویر"
+    ],
+    "correct": "اتصال به اینترنت",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از گزینه‌های زیر یک سیستم‌عامل متن‌باز است؟",
+    "answers": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "iOS"
+    ],
+    "correct": "Linux",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "برای فشرده‌سازی فایل‌ها معمولاً از کدام نرم‌افزار استفاده می‌شود؟",
+    "answers": [
+      "WinRAR",
+      "Paint",
+      "PowerPoint",
+      "Notepad"
+    ],
+    "correct": "WinRAR",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام حافظه مستقیماً روی مادربرد نصب می‌شود؟",
+    "answers": [
+      "RAM",
+      "فلش مموری",
+      "DVD",
+      "هارد اکسترنال"
+    ],
+    "correct": "RAM",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام فرمت بیشتر برای تصاویر استفاده می‌شود؟",
+    "answers": [
+      ".jpg",
+      ".mp3",
+      ".mp4",
+      ".pdf"
+    ],
+    "correct": ".jpg",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام وسیله برای اسکن کردن اسناد کاغذی به فایل دیجیتال استفاده می‌شود؟",
+    "answers": [
+      "پرینتر",
+      "اسکنر",
+      "مودم",
+      "اسپیکر"
+    ],
+    "correct": "اسکنر",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام مرورگر به صورت پیش‌فرض روی ویندوز 11 نصب است؟",
+    "answers": [
+      "Firefox",
+      "Google Chrome",
+      "Microsoft Edge",
+      "Opera"
+    ],
+    "correct": "Microsoft Edge",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه مسئول پردازش تصاویر و اجرای بازی‌ها است؟",
+    "answers": [
+      "CPU",
+      "RAM",
+      "کارت گرافیک (GPU)",
+      "SSD"
+    ],
+    "correct": "کارت گرافیک (GPU)",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر یک نرم‌افزار صفحه‌گسترده است؟",
+    "answers": [
+      "Microsoft Word",
+      "Microsoft Excel",
+      "Microsoft Access",
+      "Microsoft Paint"
+    ],
+    "correct": "Microsoft Excel",
+    "difficulty": "medium"
+  },
+  
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای جستجو در بیشتر برنامه‌ها استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + H",
+      "Ctrl + F",
+      "Ctrl + G",
+      "Ctrl + L"
+    ],
+    "correct": "Ctrl + F",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام پسوند معمولاً مربوط به فایل‌های فشرده است؟",
+    "answers": [
+      ".zip",
+      ".jpg",
+      ".docx",
+      ".mp3"
+    ],
+    "correct": ".zip",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه مسئول اتصال قطعات مختلف کامپیوتر به یکدیگر است؟",
+    "answers": [
+      "CPU",
+      "مادربرد",
+      "هارد دیسک",
+      "منبع تغذیه"
+    ],
+    "correct": "مادربرد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر برای افزایش امنیت حساب‌های کاربری توصیه می‌شود؟",
+    "answers": [
+      "استفاده از یک رمز عبور برای همه حساب‌ها",
+      "استفاده از رمز عبور قوی و منحصربه‌فرد",
+      "نوشتن رمز عبور روی کاغذ کنار کامپیوتر",
+      "غیرفعال کردن رمز عبور"
+    ],
+    "correct": "استفاده از رمز عبور قوی و منحصربه‌فرد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام نرم‌افزار برای ویرایش متن استفاده می‌شود؟",
+    "answers": [
+      "Microsoft Word",
+      "VLC Media Player",
+      "Google Chrome",
+      "Paint"
+    ],
+    "correct": "Microsoft Word",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "Wi-Fi برای چه کاری استفاده می‌شود؟",
+    "answers": [
+      "چاپ اسناد",
+      "اتصال بی‌سیم به شبکه و اینترنت",
+      "ویرایش تصاویر",
+      "ذخیره فایل‌ها"
+    ],
+    "correct": "اتصال بی‌سیم به شبکه و اینترنت",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه یک مرورگر اینترنتی نیست؟",
+    "answers": [
+      "Opera",
+      "Firefox",
+      "Excel",
+      "Edge"
+    ],
+    "correct": "Excel",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "اگر فضای ذخیره‌سازی گوشی یا کامپیوتر پر شود، معمولاً چه اتفاقی می‌افتد؟",
+    "answers": [
+      "سرعت دستگاه کاهش می‌یابد",
+      "باتری سریع‌تر شارژ می‌شود",
+      "کیفیت اینترنت افزایش می‌یابد",
+      "رم بیشتر می‌شود"
+    ],
+    "correct": "سرعت دستگاه کاهش می‌یابد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام نوع حافظه معمولاً برای نصب سیستم‌عامل و برنامه‌ها در کامپیوترهای جدید استفاده می‌شود؟",
+    "answers": [
+      "DVD",
+      "SSD",
+      "CD",
+      "Floppy Disk"
+    ],
+    "correct": "SSD",
+    "difficulty": "medium"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه بهترین توصیف برای «مرورگر وب» است؟",
+    "answers": [
+      "برنامه‌ای برای مشاهده صفحات اینترنت",
+      "برنامه‌ای برای ویرایش عکس",
+      "برنامه‌ای برای ساخت اسلاید",
+      "برنامه‌ای برای نصب ویندوز"
+    ],
+    "correct": "برنامه‌ای برای مشاهده صفحات اینترنت",
+    "difficulty": "medium"
+  },
+  
+  {
+    "category": "computer",
+    "question": "کدام شرکت پردازنده‌های سری Ryzen را تولید می‌کند؟",
+    "answers": [
+      "Intel",
+      "AMD",
+      "NVIDIA",
+      "Apple"
+    ],
+    "correct": "AMD",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای باز کردن پنجره اجرای دستورات (Run) در ویندوز استفاده می‌شود؟",
+    "answers": [
+      "Ctrl + R",
+      "Windows + R",
+      "Alt + R",
+      "Shift + R"
+    ],
+    "correct": "Windows + R",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام مرورگر توسط شرکت Microsoft توسعه داده شده است؟",
+    "answers": [
+      "Firefox",
+      "Opera",
+      "Edge",
+      "Safari"
+    ],
+    "correct": "Edge",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه مسئول خنک نگه داشتن پردازنده است؟",
+    "answers": [
+      "پاور",
+      "فن پردازنده",
+      "هارد دیسک",
+      "مودم"
+    ],
+    "correct": "فن پردازنده",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه معمولاً سرعت بیشتری در انتقال اطلاعات دارد؟",
+    "answers": [
+      "USB 2.0",
+      "USB 3.0",
+      "CD",
+      "DVD"
+    ],
+    "correct": "USB 3.0",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام نرم‌افزار به صورت پیش‌فرض برای مدیریت فایل‌ها در ویندوز استفاده می‌شود؟",
+    "answers": [
+      "File Explorer",
+      "Paint",
+      "Task Manager",
+      "Calculator"
+    ],
+    "correct": "File Explorer",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "اگر کامپیوتر به اینترنت متصل نباشد، ابتدا بررسی کدام مورد منطقی‌تر است؟",
+    "answers": [
+      "اتصال کابل یا Wi-Fi",
+      "تعویض مانیتور",
+      "تعویض کیبورد",
+      "تعویض اسپیکر"
+    ],
+    "correct": "اتصال کابل یا Wi-Fi",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه برق مورد نیاز سایر قطعات کامپیوتر را تأمین می‌کند؟",
+    "answers": [
+      "RAM",
+      "Power Supply",
+      "SSD",
+      "CPU"
+    ],
+    "correct": "Power Supply",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای به‌روزرسانی ویندوز استفاده می‌شود؟",
+    "answers": [
+      "Windows Update",
+      "Recycle Bin",
+      "Disk Cleanup",
+      "Control Panel"
+    ],
+    "correct": "Windows Update",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام شرکت سیستم‌عامل macOS را توسعه می‌دهد؟",
+    "answers": [
+      "Google",
+      "Apple",
+      "Microsoft",
+      "Dell"
+    ],
+    "correct": "Apple",
+    "difficulty": "hard"
+  },
+
+  {
+    "category": "computer",
+    "question": "کدام کلید میانبر برای قفل کردن سریع ویندوز استفاده می‌شود؟",
+    "answers": [
+      "Windows + L",
+      "Ctrl + L",
+      "Alt + L",
+      "Windows + P"
+    ],
+    "correct": "Windows + L",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه مسئول پردازش تصاویر سه‌بعدی و اجرای بازی‌های گرافیکی است؟",
+    "answers": [
+      "RAM",
+      "SSD",
+      "GPU",
+      "Power Supply"
+    ],
+    "correct": "GPU",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "اگر یک وب‌سایت با https:// شروع شود، این موضوع معمولاً نشان‌دهنده چیست؟",
+    "answers": [
+      "سرعت بیشتر اینترنت",
+      "ارتباط رمزنگاری‌شده و امن‌تر",
+      "رایگان بودن سایت",
+      "نسخه موبایل سایت"
+    ],
+    "correct": "ارتباط رمزنگاری‌شده و امن‌تر",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر یک حافظه نوری است؟",
+    "answers": [
+      "SSD",
+      "DVD",
+      "RAM",
+      "Flash Drive"
+    ],
+    "correct": "DVD",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای مشاهده برنامه‌های در حال اجرا در ویندوز کاربرد دارد؟",
+    "answers": [
+      "Task Manager",
+      "Paint",
+      "Notepad",
+      "WordPad"
+    ],
+    "correct": "Task Manager",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام شرکت سازنده پردازنده‌های Core i5 و Core i7 است؟",
+    "answers": [
+      "AMD",
+      "Intel",
+      "NVIDIA",
+      "Qualcomm"
+    ],
+    "correct": "Intel",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام وسیله برای تهیه نسخه پشتیبان از اطلاعات مناسب‌تر است؟",
+    "answers": [
+      "هارد اکسترنال",
+      "ماوس",
+      "اسپیکر",
+      "وب‌کم"
+    ],
+    "correct": "هارد اکسترنال",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه نمونه‌ای از احراز هویت دومرحله‌ای است؟",
+    "answers": [
+      "استفاده از یک رمز عبور کوتاه",
+      "دریافت کد تأیید پیامکی پس از وارد کردن رمز",
+      "ذخیره رمز در مرورگر",
+      "استفاده از نام کاربری مهمان"
+    ],
+    "correct": "دریافت کد تأیید پیامکی پس از وارد کردن رمز",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام فرمت معمولاً برای فایل‌های ویدئویی استفاده می‌شود؟",
+    "answers": [
+      ".mp4",
+      ".xlsx",
+      ".pdf",
+      ".exe"
+    ],
+    "correct": ".mp4",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "برای آزاد کردن فضای ذخیره‌سازی، حذف فایل‌ها از کدام بخش نیز ضروری است؟",
+    "answers": [
+      "Downloads",
+      "Desktop",
+      "Recycle Bin",
+      "Documents"
+    ],
+    "correct": "Recycle Bin",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام نرم‌افزار به صورت پیش‌فرض برای مشاهده تصاویر در ویندوز 11 استفاده می‌شود؟",
+    "answers": [
+      "Photos",
+      "Paint",
+      "WordPad",
+      "Notepad"
+    ],
+    "correct": "Photos",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "اگر نشانگر ماوس روی یک لینک قرار بگیرد، معمولاً شکل آن به چه چیزی تغییر می‌کند؟",
+    "answers": [
+      "فلش",
+      "دست",
+      "ساعت شنی",
+      "علامت بعلاوه"
+    ],
+    "correct": "دست",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه معمولاً باعث افزایش سرعت اجرای ویندوز می‌شود؟",
+    "answers": [
+      "پر کردن هارد دیسک",
+      "حذف فایل‌های اضافی",
+      "باز گذاشتن برنامه‌های زیاد",
+      "نصب چند آنتی‌ویروس"
+    ],
+    "correct": "حذف فایل‌های اضافی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام کلید معمولاً برای تغییر نام یک فایل در ویندوز استفاده می‌شود؟",
+    "answers": [
+      "F1",
+      "F2",
+      "F5",
+      "F12"
+    ],
+    "correct": "F2",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای تازه‌سازی (Refresh) صفحه یا پوشه در ویندوز استفاده می‌شود؟",
+    "answers": [
+      "F2",
+      "F5",
+      "F7",
+      "F9"
+    ],
+    "correct": "F5",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام یک از موارد زیر یک موتور جستجو است، نه مرورگر؟",
+    "answers": [
+      "Google",
+      "Firefox",
+      "Microsoft Edge",
+      "Opera"
+    ],
+    "correct": "Google",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای اتصال فلش مموری به کامپیوتر استفاده می‌شود؟",
+    "answers": [
+      "HDMI",
+      "USB",
+      "VGA",
+      "LAN"
+    ],
+    "correct": "USB",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام قطعه مسئول تبدیل برق شهری به ولتاژ مناسب قطعات کامپیوتر است؟",
+    "answers": [
+      "کارت گرافیک",
+      "منبع تغذیه (Power Supply)",
+      "هارد دیسک",
+      "مودم"
+    ],
+    "correct": "منبع تغذیه (Power Supply)",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "برای جلوگیری از از دست رفتن اطلاعات مهم، بهترین کار چیست؟",
+    "answers": [
+      "خاموش نکردن کامپیوتر",
+      "تهیه نسخه پشتیبان (Backup)",
+      "نصب چند مرورگر",
+      "افزایش نور مانیتور"
+    ],
+    "correct": "تهیه نسخه پشتیبان (Backup)",
+    "difficulty": "hard"
+  },
+  {
+    "category": "computer",
+    "question": "کدام گزینه برای مشاهده مشخصات سخت‌افزاری کامپیوتر در ویندوز کاربرد دارد؟",
+    "answers": [
+      "System Information",
+      "Paint",
+      "Calculator",
+      "Media Player"
+    ],
+    "correct": "System Information",
+    "difficulty": "hard"
+  },
+  
+  {
+    "category": "history",
+    "question": "بنیان‌گذار شاهنشاهی هخامنشی چه کسی بود؟",
+    "answers": [
+      "داریوش بزرگ",
+      "کوروش بزرگ",
+      "خشایارشا",
+      "کمبوجیه"
+    ],
+    "correct": "کوروش بزرگ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "دیوار بزرگ چین در کدام کشور قرار دارد؟",
+    "answers": [
+      "ژاپن",
+      "کره جنوبی",
+      "چین",
+      "هند"
+    ],
+    "correct": "چین",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "اهرام ثلاثه در کدام کشور ساخته شده‌اند؟",
+    "answers": [
+      "مصر",
+      "یونان",
+      "عراق",
+      "ترکیه"
+    ],
+    "correct": "مصر",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "آخرین شاه ایران چه کسی بود؟",
+    "answers": [
+      "رضاشاه پهلوی",
+      "محمدرضا شاه پهلوی",
+      "احمدشاه قاجار",
+      "ناصرالدین شاه"
+    ],
+    "correct": "محمدرضا شاه پهلوی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام تمدن باستانی در بین‌النهرین شکل گرفت؟",
+    "answers": [
+      "سومر",
+      "مایا",
+      "آزتک",
+      "اینکا"
+    ],
+    "correct": "سومر",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور نخستین بار میزبان بازی‌های المپیک باستان بود؟",
+    "answers": [
+      "ایتالیا",
+      "مصر",
+      "یونان",
+      "ترکیه"
+    ],
+    "correct": "یونان",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "انقلاب اسلامی ایران در چه سالی به پیروزی رسید؟",
+    "answers": [
+      "۱۳۵۵",
+      "۱۳۵۶",
+      "۱۳۵۷",
+      "۱۳۵۸"
+    ],
+    "correct": "۱۳۵۷",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "پایتخت حکومت هخامنشیان کدام شهر بود؟",
+    "answers": [
+      "اصفهان",
+      "پاسارگاد",
+      "تبریز",
+      "قم"
+    ],
+    "correct": "پاسارگاد",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله پس از هخامنشیان بر ایران حکومت کرد؟",
+    "answers": [
+      "اشکانیان",
+      "ساسانیان",
+      "صفویان",
+      "قاجار"
+    ],
+    "correct": "اشکانیان",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "جنگ جهانی دوم در چه سالی پایان یافت؟",
+    "answers": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correct": "1945",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ایرانی دستور ساخت تخت جمشید را صادر کرد؟",
+    "answers": [
+      "کوروش بزرگ",
+      "داریوش بزرگ",
+      "خشایارشا",
+      "اردشیر اول"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام کاشف اروپایی در سال 1492 به قاره آمریکا رسید؟",
+    "answers": [
+      "فردیناند ماژلان",
+      "کریستف کلمب",
+      "واسکو دو گاما",
+      "مارکو پولو"
+    ],
+    "correct": "کریستف کلمب",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "جنگ هشت ساله ایران و عراق در چه سالی آغاز شد؟",
+    "answers": [
+      "۱۳۵۷",
+      "۱۳۵۸",
+      "۱۳۵۹",
+      "۱۳۶۰"
+    ],
+    "correct": "۱۳۵۹",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله، اصفهان را به عنوان پایتخت خود انتخاب کرد؟",
+    "answers": [
+      "قاجار",
+      "صفویان",
+      "زندیه",
+      "افشاریه"
+    ],
+    "correct": "صفویان",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "بنیان‌گذار سلسله صفویه چه کسی بود؟",
+    "answers": [
+      "شاه عباس اول",
+      "شاه اسماعیل اول",
+      "نادرشاه افشار",
+      "کریم خان زند"
+    ],
+    "correct": "شاه اسماعیل اول",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور نخستین انسان را به فضا فرستاد؟",
+    "answers": [
+      "آمریکا",
+      "شوروی",
+      "چین",
+      "فرانسه"
+    ],
+    "correct": "شوروی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "نام نخستین انسانی که به فضا سفر کرد چیست؟",
+    "answers": [
+      "نیل آرمسترانگ",
+      "یوری گاگارین",
+      "باز آلدرین",
+      "جان گلن"
+    ],
+    "correct": "یوری گاگارین",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام فرمانده مقدونی امپراتوری هخامنشی را شکست داد؟",
+    "answers": [
+      "فیلیپ دوم",
+      "اسکندر مقدونی",
+      "بطلمیوس",
+      "هانیبال"
+    ],
+    "correct": "اسکندر مقدونی",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "جنگ جهانی اول در چه سالی آغاز شد؟",
+    "answers": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "correct": "1914",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام بنای تاریخی در شهر شیراز قرار دارد؟",
+    "answers": [
+      "تخت جمشید",
+      "سی و سه پل",
+      "ارگ بم",
+      "برج آزادی"
+    ],
+    "correct": "تخت جمشید",
+    "difficulty": "easy"
+  },
+  
+  {
+    "category": "history",
+    "question": "پایتخت ایران در دوره قاجار کدام شهر بود؟",
+    "answers": [
+      "تبریز",
+      "اصفهان",
+      "تهران",
+      "شیراز"
+    ],
+    "correct": "تهران",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ایرانی به «کبیر» مشهور است؟",
+    "answers": [
+      "خشایارشا",
+      "کوروش بزرگ",
+      "کمبوجیه",
+      "اردشیر"
+    ],
+    "correct": "کوروش بزرگ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "سازمان ملل متحد پس از پایان کدام جنگ تأسیس شد؟",
+    "answers": [
+      "جنگ جهانی اول",
+      "جنگ جهانی دوم",
+      "جنگ کره",
+      "جنگ ویتنام"
+    ],
+    "correct": "جنگ جهانی دوم",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "اولین انسانی که روی کره ماه قدم گذاشت چه کسی بود؟",
+    "answers": [
+      "یوری گاگارین",
+      "باز آلدرین",
+      "نیل آرمسترانگ",
+      "جان گلن"
+    ],
+    "correct": "نیل آرمسترانگ",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله پیش از قاجار بر ایران حکومت می‌کرد؟",
+    "answers": [
+      "صفویان",
+      "افشاریه",
+      "زندیه",
+      "زندیه"
+    ],
+    "correct": "زندیه",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "جنگ جهانی اول در چه سالی به پایان رسید؟",
+    "answers": [
+      "1916",
+      "1917",
+      "1918",
+      "1919"
+    ],
+    "correct": "1918",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور نخستین بار بمب اتمی را در جنگ استفاده کرد؟",
+    "answers": [
+      "آلمان",
+      "شوروی",
+      "آمریکا",
+      "بریتانیا"
+    ],
+    "correct": "آمریکا",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "نام آرامگاه کوروش بزرگ در کدام شهر قرار دارد؟",
+    "answers": [
+      "همدان",
+      "پاسارگاد",
+      "اصفهان",
+      "یزد"
+    ],
+    "correct": "پاسارگاد",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه صفوی به ساخت و توسعه اصفهان شهرت دارد؟",
+    "answers": [
+      "شاه اسماعیل اول",
+      "شاه عباس اول",
+      "شاه تهماسب",
+      "شاه سلطان حسین"
+    ],
+    "correct": "شاه عباس اول",
+    "difficulty": "easy"
+  },
+  {
+    "category": "history",
+    "question": "جشن‌های ۲۵۰۰ ساله شاهنشاهی ایران در زمان کدام پادشاه برگزار شد؟",
+    "answers": [
+      "رضاشاه پهلوی",
+      "محمدرضا شاه پهلوی",
+      "احمدشاه قاجار",
+      "ناصرالدین شاه"
+    ],
+    "correct": "محمدرضا شاه پهلوی",
+    "difficulty": "easy"
+  },
+
+  {
+    "category": "history",
+    "question": "پایتخت ایران در دوران صفویه کدام شهر بود؟",
+    "answers": [
+      "تبریز",
+      "شیراز",
+      "اصفهان",
+      "مشهد"
+    ],
+    "correct": "اصفهان",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "نادرشاه افشار بیشتر به خاطر کدام رویداد تاریخی مشهور است؟",
+    "answers": [
+      "فتح هند",
+      "ساخت تخت جمشید",
+      "تأسیس سلسله صفوی",
+      "شکست از مغولان"
+    ],
+    "correct": "فتح هند",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام معاهده پس از جنگ ایران و روسیه باعث جدایی بخش‌هایی از ایران شد؟",
+    "answers": [
+      "گلستان",
+      "ترکمانچای",
+      "پاریس",
+      "ورسای"
+    ],
+    "correct": "ترکمانچای",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله ایرانی پس از اشکانیان به قدرت رسید؟",
+    "answers": [
+      "ساسانیان",
+      "صفویان",
+      "قاجاریه",
+      "افشاریه"
+    ],
+    "correct": "ساسانیان",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه هخامنشی کانال میان رود نیل و دریای سرخ را تکمیل کرد؟",
+    "answers": [
+      "کوروش بزرگ",
+      "کمبوجیه",
+      "داریوش بزرگ",
+      "خشایارشا"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "امپراتوری روم باستان در کدام قاره شکل گرفت؟",
+    "answers": [
+      "آسیا",
+      "آفریقا",
+      "اروپا",
+      "آمریکا"
+    ],
+    "correct": "اروپا",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور در سال 1969 نخستین انسان را بر سطح ماه فرود آورد؟",
+    "answers": [
+      "شوروی",
+      "آلمان",
+      "آمریکا",
+      "فرانسه"
+    ],
+    "correct": "آمریکا",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام شهر پایتخت امپراتوری روم باستان بود؟",
+    "answers": [
+      "آتن",
+      "رم",
+      "استانبول",
+      "پاریس"
+    ],
+    "correct": "رم",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "سلسله زندیه توسط چه کسی بنیان‌گذاری شد؟",
+    "answers": [
+      "نادرشاه افشار",
+      "کریم خان زند",
+      "آقامحمدخان قاجار",
+      "شاه عباس اول"
+    ],
+    "correct": "کریم خان زند",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام جنگ با حمله آلمان به لهستان آغاز شد؟",
+    "answers": [
+      "جنگ جهانی اول",
+      "جنگ جهانی دوم",
+      "جنگ سرد",
+      "جنگ کره"
+    ],
+    "correct": "جنگ جهانی دوم",
+    "difficulty": "medium"
+  },
+
+  {
+    "category": "history",
+    "question": "بزرگ‌ترین کتابخانه جهان باستان چه نام داشت؟",
+    "answers": [
+      "کتابخانه پرگامون",
+      "کتابخانه اسکندریه",
+      "کتابخانه آتن",
+      "کتابخانه بابل"
+    ],
+    "correct": "کتابخانه اسکندریه",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله پیش از صفویان بر ایران حکومت می‌کرد؟",
+    "answers": [
+      "تیموریان",
+      "قاجاریه",
+      "افشاریه",
+      "زندیه"
+    ],
+    "correct": "تیموریان",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه هخامنشی دستور ساخت کاخ آپادانا را صادر کرد؟",
+    "answers": [
+      "کوروش بزرگ",
+      "داریوش بزرگ",
+      "خشایارشا",
+      "اردشیر اول"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "دیوار برلین در چه سالی فرو ریخت؟",
+    "answers": [
+      "1985",
+      "1987",
+      "1989",
+      "1991"
+    ],
+    "correct": "1989",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "پایتخت حکومت ساسانیان کدام شهر بود؟",
+    "answers": [
+      "تیسفون",
+      "ری",
+      "همدان",
+      "شیراز"
+    ],
+    "correct": "تیسفون",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام فرمانده کارتاژ در جنگ‌های پونیک با عبور از رشته‌کوه آلپ مشهور شد؟",
+    "answers": [
+      "ژولیوس سزار",
+      "هانیبال",
+      "اسکندر مقدونی",
+      "نرون"
+    ],
+    "correct": "هانیبال",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "اولین رئیس‌جمهور ایالات متحده آمریکا چه کسی بود؟",
+    "answers": [
+      "آبراهام لینکلن",
+      "توماس جفرسون",
+      "جورج واشنگتن",
+      "جان آدامز"
+    ],
+    "correct": "جورج واشنگتن",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام امپراتوری شهر قسطنطنیه را در سال 1453 فتح کرد؟",
+    "answers": [
+      "امپراتوری مغول",
+      "امپراتوری عثمانی",
+      "امپراتوری روم",
+      "امپراتوری ایران"
+    ],
+    "correct": "امپراتوری عثمانی",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ایران به «آقامحمدخان» مشهور است؟",
+    "answers": [
+      "بنیان‌گذار سلسله قاجار",
+      "بنیان‌گذار سلسله زندیه",
+      "آخرین شاه صفوی",
+      "پادشاه هخامنشی"
+    ],
+    "correct": "بنیان‌گذار سلسله قاجار",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام رویداد آغازگر رنسانس در اروپا به شمار می‌رود؟",
+    "answers": [
+      "سقوط قسطنطنیه",
+      "کشف آمریکا",
+      "اختراع تلفن",
+      "انقلاب فرانسه"
+    ],
+    "correct": "سقوط قسطنطنیه",
+    "difficulty": "medium"
+  },
+
+  {
+    "category": "history",
+    "question": "کدام پادشاه ساسانی در نبرد قادسیه شکست خورد؟",
+    "answers": [
+      "شاپور دوم",
+      "یزدگرد سوم",
+      "خسرو انوشیروان",
+      "اردشیر بابکان"
+    ],
+    "correct": "یزدگرد سوم",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ایرانی به «انوشیروان دادگر» مشهور است؟",
+    "answers": [
+      "شاپور اول",
+      "خسرو انوشیروان",
+      "اردشیر بابکان",
+      "بهرام گور"
+    ],
+    "correct": "خسرو انوشیروان",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کانال سوئز دو کدام پهنه آبی را به یکدیگر متصل می‌کند؟",
+    "answers": [
+      "دریای سرخ و دریای مدیترانه",
+      "دریای سیاه و دریای خزر",
+      "اقیانوس آرام و اطلس",
+      "خلیج فارس و دریای عمان"
+    ],
+    "correct": "دریای سرخ و دریای مدیترانه",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام فرمانده مسلمان در سال 711 میلادی وارد شبه‌جزیره ایبری شد؟",
+    "answers": [
+      "طارق بن زیاد",
+      "صلاح‌الدین ایوبی",
+      "خالد بن ولید",
+      "عمرو بن عاص"
+    ],
+    "correct": "طارق بن زیاد",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور نخستین بار میزبان جام جهانی فوتبال در سال 1930 بود؟",
+    "answers": [
+      "برزیل",
+      "آرژانتین",
+      "اروگوئه",
+      "ایتالیا"
+    ],
+    "correct": "اروگوئه",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "منشور کوروش در کدام کشور امروزی کشف شد؟",
+    "answers": [
+      "ایران",
+      "عراق",
+      "ترکیه",
+      "سوریه"
+    ],
+    "correct": "عراق",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "آخرین امپراتور روم غربی چه نام داشت؟",
+    "answers": [
+      "رومولوس آگوستولوس",
+      "کنستانتین",
+      "ژوستینین",
+      "نرون"
+    ],
+    "correct": "رومولوس آگوستولوس",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام اختراع یوهانس گوتنبرگ تأثیر بزرگی بر گسترش دانش در اروپا داشت؟",
+    "answers": [
+      "تلسکوپ",
+      "ماشین چاپ",
+      "قطب‌نما",
+      "موتور بخار"
+    ],
+    "correct": "ماشین چاپ",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه مقدونی، امپراتوری هخامنشی را فتح کرد؟",
+    "answers": [
+      "فیلیپ دوم",
+      "اسکندر مقدونی",
+      "بطلمیوس",
+      "سلوکوس"
+    ],
+    "correct": "اسکندر مقدونی",
+    "difficulty": "medium"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله ایرانی پس از افشاریه به قدرت رسید؟",
+    "answers": [
+      "صفویان",
+      "قاجاریه",
+      "زندیه",
+      "پهلوی"
+    ],
+    "correct": "زندیه",
+    "difficulty": "medium"
+  },
+
+  {
+    "category": "history",
+    "question": "کدام پادشاه هخامنشی فرمان ساخت تخت جمشید را صادر کرد؟",
+    "answers": [
+      "کوروش بزرگ",
+      "داریوش بزرگ",
+      "خشایارشا",
+      "کمبوجیه"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "پیمان ورسای پس از پایان کدام جنگ امضا شد؟",
+    "answers": [
+      "جنگ جهانی اول",
+      "جنگ جهانی دوم",
+      "جنگ سرد",
+      "جنگ کریمه"
+    ],
+    "correct": "جنگ جهانی اول",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "پایتخت حکومت اشکانیان چه نام داشت؟",
+    "answers": [
+      "تیسفون",
+      "پاسارگاد",
+      "شوش",
+      "همدان"
+    ],
+    "correct": "تیسفون",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله ایرانی بیش از ۴۰۰ سال بر ایران حکومت کرد؟",
+    "answers": [
+      "هخامنشیان",
+      "اشکانیان",
+      "ساسانیان",
+      "صفویان"
+    ],
+    "correct": "اشکانیان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "دیوار برلین نماد جدایی کدام دو بخش بود؟",
+    "answers": [
+      "آلمان شرقی و آلمان غربی",
+      "فرانسه و آلمان",
+      "لهستان و آلمان",
+      "چک و آلمان"
+    ],
+    "correct": "آلمان شرقی و آلمان غربی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام فرمانده مسلمان شهر بیت‌المقدس را در جنگ‌های صلیبی بازپس گرفت؟",
+    "answers": [
+      "طارق بن زیاد",
+      "صلاح‌الدین ایوبی",
+      "خالد بن ولید",
+      "عمرو بن عاص"
+    ],
+    "correct": "صلاح‌الدین ایوبی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "نخستین سلسله ایرانی پس از ورود اسلام به ایران کدام بود؟",
+    "answers": [
+      "سامانیان",
+      "صفاریان",
+      "طاهریان",
+      "غزنویان"
+    ],
+    "correct": "طاهریان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور در سال ۱۹۹۱ از اتحاد جماهیر شوروی استقلال یافت؟",
+    "answers": [
+      "اوکراین",
+      "قزاقستان",
+      "بلاروس",
+      "همه موارد"
+    ],
+    "correct": "همه موارد",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام شهر در گذشته با نام «قسطنطنیه» شناخته می‌شد؟",
+    "answers": [
+      "آنکارا",
+      "استانبول",
+      "ازمیر",
+      "آتن"
+    ],
+    "correct": "استانبول",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "جنگ سرد عمدتاً میان کدام دو قدرت جهانی بود؟",
+    "answers": [
+      "آمریکا و شوروی",
+      "آلمان و فرانسه",
+      "چین و ژاپن",
+      "بریتانیا و ایتالیا"
+    ],
+    "correct": "آمریکا و شوروی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "نبرد ماراتن میان ایران و کدام دولت‌شهر یونانی رخ داد؟",
+    "answers": [
+      "آتن",
+      "اسپارت",
+      "تب",
+      "کورینت"
+    ],
+    "correct": "آتن",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ساسانی دانشگاه جندی‌شاپور را گسترش داد؟",
+    "answers": [
+      "اردشیر بابکان",
+      "شاپور اول",
+      "خسرو انوشیروان",
+      "یزدگرد سوم"
+    ],
+    "correct": "خسرو انوشیروان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام معاهده به جنگ ایران و روسیه در سال ۱۸۲۸ میلادی پایان داد؟",
+    "answers": [
+      "گلستان",
+      "ترکمانچای",
+      "ارزروم",
+      "پاریس"
+    ],
+    "correct": "ترکمانچای",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "اولین امپراتور روم چه کسی بود؟",
+    "answers": [
+      "ژولیوس سزار",
+      "آگوستوس",
+      "نرون",
+      "کنستانتین"
+    ],
+    "correct": "آگوستوس",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام تمدن باستانی خط میخی را ابداع کرد؟",
+    "answers": [
+      "سومریان",
+      "مصریان",
+      "یونانیان",
+      "فینیقیان"
+    ],
+    "correct": "سومریان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "پایتخت امپراتوری عثمانی چه شهری بود؟",
+    "answers": [
+      "آنکارا",
+      "استانبول",
+      "ازمیر",
+      "بورسا"
+    ],
+    "correct": "استانبول",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام فرمانده فرانسوی در نبرد واترلو شکست خورد؟",
+    "answers": [
+      "شارل دگل",
+      "ناپلئون بناپارت",
+      "لوئی شانزدهم",
+      "کاردینال ریشلیو"
+    ],
+    "correct": "ناپلئون بناپارت",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "سلسله سامانیان بیشتر در کدام بخش از ایران بزرگ حکومت می‌کردند؟",
+    "answers": [
+      "خراسان و ماوراءالنهر",
+      "فارس",
+      "آذربایجان",
+      "خوزستان"
+    ],
+    "correct": "خراسان و ماوراءالنهر",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام رویداد در سال ۱۷۸۹ میلادی آغاز شد؟",
+    "answers": [
+      "انقلاب فرانسه",
+      "جنگ جهانی اول",
+      "انقلاب صنعتی",
+      "جنگ‌های صلیبی"
+    ],
+    "correct": "انقلاب فرانسه",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه ایران لقب «شاهنشاه» را در کتیبه بیستون به کار برده است؟",
+    "answers": [
+      "کوروش بزرگ",
+      "داریوش بزرگ",
+      "خشایارشا",
+      "اردشیر اول"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام پادشاه هخامنشی دستور حفر کانالی میان رود نیل و دریای سرخ را صادر کرد؟",
+    "answers": [
+      "کوروش بزرگ",
+      "داریوش بزرگ",
+      "خشایارشا",
+      "کمبوجیه"
+    ],
+    "correct": "داریوش بزرگ",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام شهر محل امضای معاهده ترکمانچای بود؟",
+    "answers": [
+      "تبریز",
+      "ترکمانچای",
+      "تهران",
+      "ایروان"
+    ],
+    "correct": "ترکمانچای",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "اولین انسان که موفق به دور زدن کامل کره زمین شد، سفر خود را با رهبری کدام دریانورد آغاز کرد؟",
+    "answers": [
+      "کریستف کلمب",
+      "فردیناند ماژلان",
+      "واسکو دو گاما",
+      "جیمز کوک"
+    ],
+    "correct": "فردیناند ماژلان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام امپراتوری تا سال 1453 میلادی بر قسطنطنیه حکومت می‌کرد؟",
+    "answers": [
+      "امپراتوری عثمانی",
+      "امپراتوری بیزانس",
+      "امپراتوری روم مقدس",
+      "امپراتوری مغول"
+    ],
+    "correct": "امپراتوری بیزانس",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام شاه قاجار فرمان مشروطیت را امضا کرد؟",
+    "answers": [
+      "ناصرالدین شاه",
+      "مظفرالدین شاه",
+      "محمدعلی شاه",
+      "احمدشاه"
+    ],
+    "correct": "مظفرالدین شاه",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "نبرد گوگمل میان اسکندر مقدونی و کدام پادشاه هخامنشی رخ داد؟",
+    "answers": [
+      "داریوش دوم",
+      "اردشیر دوم",
+      "داریوش سوم",
+      "خشایارشا"
+    ],
+    "correct": "داریوش سوم",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام سلسله پس از ساسانیان، نخستین حکومت مستقل ایرانی پس از اسلام را تشکیل داد؟",
+    "answers": [
+      "طاهریان",
+      "صفاریان",
+      "سامانیان",
+      "آل بویه"
+    ],
+    "correct": "طاهریان",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور در سال 1945 نخستین بار از سلاح هسته‌ای در جنگ استفاده کرد؟",
+    "answers": [
+      "آلمان",
+      "شوروی",
+      "آمریکا",
+      "بریتانیا"
+    ],
+    "correct": "آمریکا",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام کشور دیوار برلین را در قلمرو خود داشت؟",
+    "answers": [
+      "آلمان شرقی",
+      "آلمان غربی",
+      "لهستان",
+      "اتریش"
+    ],
+    "correct": "آلمان شرقی",
+    "difficulty": "hard"
+  },
+  {
+    "category": "history",
+    "question": "کدام تمدن باستانی شهر تاریخی پرسپولیس (تخت جمشید) را بنا کرد؟",
+    "answers": [
+      "ساسانیان",
+      "هخامنشیان",
+      "اشکانیان",
+      "ایلامیان"
+    ],
+    "correct": "هخامنشیان",
+    "difficulty": "hard"
+  }
+]

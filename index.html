@@ -18,11 +18,19 @@
         <h2>به آزمون خوش آمدید</h2>
         <h3>در این آزمون چند سوال از شما پرسیده می‌شود، آماده‌اید؟</h3>
         <br><br>
+        <p>دسته‌بندی را انتخاب کنید:</p>
+
+    <button class="category-btn" data-category="general"> عمومی 🌍</button>
+    <button class="category-btn" data-category="computer"> کامپیوتر 💻</button>
+    <button class="category-btn" data-category="history"> تاریخ 📜</button>
+    <button class="category-btn" data-category="sports" disabled> ورزش (به‌زودی) ⚽</button>
+
+    <br><br>
          <p>سطح دشواری را انتخاب کنید:</p>
 
-    <button class="difficulty-btn" data-level="easy">آسون</button>
-    <button class="difficulty-btn" data-level="medium">متوسط</button>
-    <button class="difficulty-btn" data-level="hard">سخت</button>
+    <button class="difficulty-btn" data-level="easy">آسون 😊</button>
+    <button class="difficulty-btn" data-level="medium">متوسط 😑</button>
+    <button class="difficulty-btn" data-level="hard">سخت 😥</button>
 
     <br><br>
         <button id="start-btn">شروع آزمون</button>
@@ -34,12 +42,21 @@
             <br>
         </center>
         <p id="question-counter"></p>
-        <p id="timer"></p>
+        <div id="timer-container">
+            <svg width="90" height="90" viewBox="0 0 90 90">
+                <circle cx="45" cy="45" r="38" stroke="#ddd" stroke-width="8" fill="none" />
+                <circle cx="45" cy="45" r="38" stroke="#4caf50" stroke-width="8" fill="none"
+                    stroke-dasharray="238.76" stroke-dashoffset="0"
+                    transform="rotate(-90 45 45)" id="timer-ring" />
+            </svg>
+            <span id="timer-text"></span>
+        </div>
         <br>
         <h3><div class="qus" id="question"></div></h3>
         <div class="answers" id="answers"></div>
         <br><br>
         <button id="next-btn">سوال بعدی</button>
+        <button id="skip-btn">رد کردن سوال</button>
         <br><br>
         <button id="restart-btn" style="display: none;">شروع دوباره</button>
      <br>

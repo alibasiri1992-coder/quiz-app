@@ -1,6 +1,19 @@
 let questions=[];
+
+// تعداد سوالاتی که در هر آزمون به کاربر نشون داده می‌شه
+const QUESTIONS_PER_QUIZ = 10;
+
+//تشخیص خودکار: اگه رو لوکال هستیم (localhost یا فایل مستقیم) به سرور لوکال وصل شو، وگرنه به Render
+const isLocal = location.hostname === "localhost"
+    || location.hostname === "127.0.0.1"
+    || location.protocol === "file:";
+
+const API_URL = isLocal
+    ? "http://localhost:3000/api/questions"
+    : "https://quiz-app-sim9.onrender.com/api/questions";
+
 //گرفتن سوالات از سرور
-fetch("https://quiz-app-sim9.onrender.com/api/questions")
+fetch(API_URL)
 .then(function(response){
     return response.json();
 })
@@ -23,24 +36,56 @@ const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
 const nextButton = document.getElementById("next-btn");
 const restartbutton=document.getElementById("restart-btn");
+const skipButton = document.getElementById("skip-btn");
 const progressBar=document.getElementById("progress-bar");
 const questionCounter = document.getElementById("question-counter");
 const themeToggle = document.getElementById("theme-toggle");
 const welcomeScreen = document.getElementById("welcome-screen");
 const quizScreen = document.getElementById("quiz-screen");
 const startButton = document.getElementById("start-btn");
-const timerElement = document.getElementById("timer");
+const timerElement = document.getElementById("timer-container");
+const timerRing = document.getElementById("timer-ring");
+const timerText = document.getElementById("timer-text");
 let selectedDifficulty = "easy";
+let selectedCategory = "general";
 let allQuestions = [];
 let timeLeft;
 let timerInterval;
 
+
+// به‌هم‌ریختن تصادفی یک آرایه (الگوریتم Fisher-Yates) و برگرداندن یک آرایه‌ی جدید
+function shuffleArray(array) {
+    const result = array.slice(); // کپی می‌گیریم تا آرایه‌ی اصلی دست‌نخورده بمونه
+    for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+}
 
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 
 difficultyButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
         selectedDifficulty = btn.dataset.level;
+
+        difficultyButtons.forEach(function (b) {
+            b.classList.remove("active");
+        });
+        btn.classList.add("active");
+    });
+});
+
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+categoryButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        selectedCategory = btn.dataset.category;
+
+        categoryButtons.forEach(function (b) {
+            b.classList.remove("active");
+        });
+        btn.classList.add("active");
     });
 });
 
@@ -59,9 +104,11 @@ themeToggle.addEventListener("click", function () {
 });
 startButton.addEventListener("click", function () {
 
-    questions = allQuestions.filter(function (q) {
-        return q.difficulty === selectedDifficulty;
+    const filtered = allQuestions.filter(function (q) {
+        return q.difficulty === selectedDifficulty && q.category === selectedCategory;
     });
+
+    questions = shuffleArray(filtered).slice(0, QUESTIONS_PER_QUIZ);
 
     currentQuestion = 0;
 
@@ -77,6 +124,7 @@ function showResult(){
 
     progressBar.style.width = "100%";
     nextButton.style.display = "none";
+    skipButton.style.display = "none";
     restartbutton.style.display = "inline-block";
     questionCounter.style.display = "none";
 
@@ -85,6 +133,19 @@ function showResult(){
     const percent = Math.round((score / questions.length) * 100);
     const circumference = 408;
     const offset = circumference - (percent / 100) * circumference;
+
+    // خواندن بهترین امتیاز قبلی برای همین ترکیب دسته‌بندی + دشواری
+    const highScoreKey = "highscore_" + selectedCategory + "_" + selectedDifficulty;
+    const previousBest = parseInt(localStorage.getItem(highScoreKey)) || 0;
+
+    let isNewRecord = false;
+    if (score > previousBest) {
+        localStorage.setItem(highScoreKey, score);
+        isNewRecord = true;
+    }
+
+    const bestScore = isNewRecord ? score : previousBest;
+    const recordBadge = isNewRecord ? '<p style="color:#4caf50;">🏆 رکورد جدید!</p>' : '';
 
     answersElement.innerHTML =
         '<center>' +
@@ -96,6 +157,8 @@ function showResult(){
         '<text x="75" y="82" text-anchor="middle" font-size="24">' + percent + '%</text>' +
         '</svg>' +
         '<p>امتیاز شما: ' + score + ' از ' + questions.length + '</p>' +
+        '<p>بهترین امتیاز شما در این بخش: ' + bestScore + ' از ' + questions.length + '</p>' +
+        recordBadge +
         '</center>';
 
     // انیمیشن پر شدن دایره بعد از یه لحظه (تا مرورگر اول حالت خالی رو رندر کنه)
@@ -130,6 +193,7 @@ function showQuestion() {
 
         const button = document.createElement("button");
         button.textContent = answers[i];
+        button.classList.add("answer-btn");
 
         if (button.textContent == questions[currentQuestion].correct) {
             button.dataset.correct = "true";
@@ -167,17 +231,31 @@ function showQuestion() {
 // تایمر
 // ==========================
 
+// مدت زمان هر سوال (ثانیه) و محیط دایره‌ی تایمر (2 × π × شعاع=38)
+const TIMER_DURATION = 15;
+const TIMER_CIRCUMFERENCE = 238.76;
+
 function startTimer() {
 
-    timeLeft = 15;
-    timerElement.textContent = "⏱ " + timeLeft + " ثانیه";
+    timeLeft = TIMER_DURATION;
+    timerText.classList.remove("timer-message");
+    timerText.textContent = timeLeft;
+    timerRing.style.strokeDashoffset = 0;
+    timerElement.classList.remove("timer-warning");
 
     clearInterval(timerInterval);
 
     timerInterval = setInterval(function () {
 
         timeLeft--;
-        timerElement.textContent = "⏱ " + timeLeft + " ثانیه";
+        timerText.textContent = timeLeft;
+
+        const offset = TIMER_CIRCUMFERENCE * (1 - timeLeft / TIMER_DURATION);
+        timerRing.style.strokeDashoffset = offset;
+
+        if (timeLeft <= 5) {
+            timerElement.classList.add("timer-warning");
+        }
 
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
@@ -187,7 +265,7 @@ function startTimer() {
     }, 1000);
 }
 
-function timeUp() {
+function revealAndAdvance(message) {
 
     const allButtons = answersElement.children;
 
@@ -200,7 +278,9 @@ function timeUp() {
         }
     }
 
-    timerElement.textContent = "⏰ وقت تمام شد!";
+    timerElement.classList.remove("timer-warning");
+    timerText.classList.add("timer-message");
+    timerText.textContent = message;
 
     setTimeout(function () {
 
@@ -213,6 +293,16 @@ function timeUp() {
 
     }, 1500);
 }
+
+function timeUp() {
+    clearInterval(timerInterval);
+    revealAndAdvance("⏰ وقت تمام شد!");
+}
+
+skipButton.addEventListener("click", function () {
+    clearInterval(timerInterval);
+    revealAndAdvance("⏭ این سوال رد شد");
+});
 
 
 // ==========================
@@ -252,7 +342,10 @@ restartbutton.addEventListener("click", function () {
     score = 0;
     timerElement.style.display = "block";
     nextButton.style.display = "inline-block";
+    skipButton.style.display = "inline-block";
     restartbutton.style.display = "none";
     questionCounter.style.display = "block";
-    showQuestion();
+
+    quizScreen.style.display = "none";
+    welcomeScreen.style.display = "block";
 });

@@ -30,10 +30,37 @@ button{
     button:hover{
         background-color:rgba(159,200.126,0.3) ;
     }
-    .ans{
-        display:flex;
-        flex-direction: column;
-        gap: 10px;
+    #answers{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    #answers > center{
+        grid-column: 1 / -1;
+    }
+    .answer-btn{
+        background-color: #ffffff;
+        color: #222;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        aspect-ratio: 3 / 4;
+        margin-top: 0;
+        width: 100%;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .answer-btn:hover{
+        background-color: #f5f5f5;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        transform: translateY(-6px);
+    }
+    body.dark-mode .answer-btn{
+        background-color: #24345c;
+        color: #f0f0f0;
+        border: 1px solid #33456e;
     }
     .progress-container{
         width: 100%;
@@ -69,6 +96,18 @@ button{
     .theme-btn{
         width: 150px;
         align-self: auto;
+    }
+    .difficulty-btn.active, .category-btn.active{
+        background-color: #3f72af;
+        color: white;
+    }
+    body.dark-mode .difficulty-btn.active, body.dark-mode .category-btn.active{
+        background-color: #E9B63B;
+        color: black;
+    }
+    .category-btn:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
     }
   .fade-out {
     animation: fadeOut 0.8ُs ease forwards;
@@ -107,4 +146,38 @@ button{
 }
 #score-circle {
     transition: stroke-dashoffset 1s ease;
+}
+#timer-container{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 10px auto;
+}
+#timer-ring{
+    transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}
+#timer-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+#timer-text.timer-message{
+    font-size: 11px;
+    width: 66px;
+    line-height: 1.3;
+    text-align: center;
+}
+#timer-container.timer-warning #timer-ring{
+    stroke: #e53935;
+}
+#timer-container.timer-warning #timer-text{
+    color: #e53935;
+    animation: timerPulse 0.6s ease-in-out infinite;
+}
+@keyframes timerPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.3); }
 }
