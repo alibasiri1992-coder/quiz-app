@@ -16,7 +16,54 @@ db.run(`
         correct TEXT NOT NULL,
         difficulty TEXT NOT NULL
     )
-`);
+`, seedIfEmpty);
+
+// روی Render (بدون Persistent Disk) هر بار سرویس ری‌استارت بشه، quiz.db خالی می‌شه.
+// این تابع فقط وقتی جدول خالیه، سوالات رو از gen-es.json می‌خونه و پرش می‌کنه.
+// این‌طوری دیگه لازم نیست quiz.db رو دستی push کنی؛ فقط کافیه gen-es.json توی گیت باشه.
+function seedIfEmpty() {
+    db.get("SELECT COUNT(*) AS count FROM questions", [], function (err, row) {
+        if (err) {
+            console.error("خطا در بررسی تعداد سوالات:", err.message);
+            return;
+        }
+
+        if (row.count > 0) {
+            console.log(`دیتابیس از قبل پر بود (${row.count} سوال) — seed انجام نشد.`);
+            return;
+        }
+
+        console.log("دیتابیس خالیه، در حال seed کردن از gen-es.json ...");
+
+        let allQuestions;
+        try {
+            const data = fs.readFileSync("gen-es.json", "utf8");
+            allQuestions = JSON.parse(data);
+        } catch (e) {
+            console.error("خطا در خواندن gen-es.json:", e.message);
+            return;
+        }
+
+        const stmt = db.prepare(
+            `INSERT INTO questions (category, question, answer1, answer2, answer3, answer4, correct, difficulty)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        );
+
+        allQuestions.forEach(function (q) {
+            stmt.run(
+                q.category || "general",
+                q.question,
+                q.answers[0], q.answers[1], q.answers[2], q.answers[3],
+                q.correct,
+                q.difficulty || "easy"
+            );
+        });
+
+        stmt.finalize(function () {
+            console.log(`seed کامل شد: ${allQuestions.length} سوال اضافه شد.`);
+        });
+    });
+}
 
 // اجازه‌ی دسترسی فرانت‌اند به این سرور (CORS)
 app.use((req, res, next) => {
