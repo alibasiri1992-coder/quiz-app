@@ -3,7 +3,7 @@ const app = express();
 const fs = require("fs");
 const sqlite3 = require("sqlite3").verbose();
 const bcrypt = require("bcryptjs");
-const session = require("express-session");
+const jwt = require("jsonwebtoken");
 const db = new sqlite3.Database("quiz.db");
 
 db.run(`
@@ -174,29 +174,18 @@ app.use((req, res, next) => {
     if (origin && ALLOWED_ORIGINS.includes(origin)) {
         res.header("Access-Control-Allow-Origin", origin);
     }
-    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
     res.header("Access-Control-Allow-Methods", "GET, POST");
-    res.header("Access-Control-Allow-Credentials", "true"); // اجازه‌ی ارسال کوکی بین دو origin
     next();
 });
 
-// تنظیمات session — بعد از لاگین موفق، سرور یه کوکی به مرورگر می‌ده
-// و با اون کوکی می‌فهمه که این کاربر لاگین کرده یا نه.
-app.use(session({
-    secret: process.env.SESSION_SECRET || "dev-secret-change-this",
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-        secure: true,       // مرورگرهای مدرن localhost/127.0.0.1 رو هم secure context حساب می‌کنن
-        sameSite: "none",   // چون فرانت‌اند و بک‌اند همیشه origin جدان (حتی لوکال: پورت 5500 vs 3000)
-        maxAge: 24 * 60 * 60 * 1000 // یک روز اعتبار
-    }
-}));
+// رمز امضای توکن‌ها — از همون SESSION_SECRET که رو Render گذاشتی استفاده می‌کنیم
+const JWT_SECRET = process.env.SESSION_SECRET || "dev-secret-change-this";
 
 // اجازه‌ی خواندن بدنه‌ی JSON درخواست‌ها (لازم برای POST)
 app.use(express.json());
 
-// مسیر لاگین: username و password می‌گیره، چک می‌کنه، و اگه درست بود session می‌سازه
+// مسیر لاگین: username و password می‌گیره، چک می‌کنه، و اگه درست بود یه توکن JWT می‌سازه
 app.post("/api/login", (req, res) => {
     const { username, password } = req.body;
 
@@ -227,39 +216,40 @@ app.post("/api/login", (req, res) => {
                 return;
             }
 
-            // لاگین موفق: اطلاعات کاربر رو تو session ذخیره می‌کنیم
-            req.session.userId = user.id;
-            req.session.username = user.username;
+            // لاگین موفق: یه توکن می‌سازیم که هویت کاربر توشه و امضا شده،
+            // و مستقیم تو بدنه‌ی جواب (نه کوکی) برمی‌گردونیمش.
+            const token = jwt.sign(
+                { userId: user.id, username: user.username },
+                JWT_SECRET,
+                { expiresIn: "1d" }
+            );
 
-            res.json({ message: "ورود موفق" });
+            res.json({ message: "ورود موفق", token: token });
         });
     });
 });
 
-// مسیر لاگ‌اوت: session رو پاک می‌کنه
-app.post("/api/logout", (req, res) => {
-    req.session.destroy(() => {
-        res.json({ message: "خروج موفق" });
-    });
-});
-
-// مسیر چک کردن وضعیت لاگین (فرانت‌اند ازش استفاده می‌کنه که بفهمه کاربر لاگینه یا نه)
-app.get("/api/me", (req, res) => {
-    if (req.session.userId) {
-        res.json({ loggedIn: true, username: req.session.username });
-    } else {
-        res.json({ loggedIn: false });
-    }
-});
-
-// middleware: قبل از اجرای route، چک می‌کنه کاربر لاگین کرده یا نه.
-// اگه لاگین نکرده بود، اصلاً اجازه نمی‌ده به کد اصلی route برسه.
+// middleware: قبل از اجرای route، هدر Authorization رو چک می‌کنه.
+// انتظار داره چیزی شبیه: "Authorization: Bearer <token>"
 function requireAuth(req, res, next) {
-    if (!req.session.userId) {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
         res.status(401).json({ error: "برای این عملیات باید لاگین کنی" });
         return;
     }
-    next(); // لاگین کرده، پس اجازه بده ادامه بده
+
+    const token = authHeader.slice("Bearer ".length);
+
+    jwt.verify(token, JWT_SECRET, function (err, decoded) {
+        if (err) {
+            // یا امضاش جعلیه، یا منقضی شده
+            res.status(401).json({ error: "ورودت منقضی شده، دوباره لاگین کن" });
+            return;
+        }
+        req.user = decoded; // اگه بعداً لازم شد بدونیم کی درخواست داده
+        next(); // توکن معتبره، پس اجازه بده ادامه بده
+    });
 }
 
 // این مسیر، سوالات رو از فایل JSON می‌خونه و برمی‌گردونه
