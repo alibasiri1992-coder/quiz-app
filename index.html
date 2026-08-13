@@ -4,41 +4,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
     <title>quiz</title>
   </head>
   <body>
-    <button id="theme-toggle" class="theme-btn"> حالت تاریک🌙</button>
-    
-   <div class="container">
 
-    
+    <nav class="navbar">
+      <div class="navbar-logo"> QuizMaster</div>
+      <div class="navbar-actions">
+        <button class="theme-toggle-btn" title="افزودن سوال جدید" onclick="window.location.href='add-question.html'">➕</button>
+        <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+      </div>
+    </nav>
 
-    <div id="welcome-screen">
-        <h2>به آزمون خوش آمدید</h2>
-        <h3>در این آزمون چند سوال از شما پرسیده می‌شود، آماده‌اید؟</h3>
-        <br><br>
-        <p>دسته‌بندی را انتخاب کنید:</p>
+    <div class="page-wrap">
 
-    <button class="category-btn" data-category="general"> عمومی 🌍</button>
-    <button class="category-btn" data-category="computer"> کامپیوتر 💻</button>
-    <button class="category-btn" data-category="history"> تاریخ 📜</button>
-    <button class="category-btn" data-category="sport"> ورزش  ⚽</button>
+      <div class="container" id="welcome-screen">
 
-    <br><br>
-    
-         <p>سطح دشواری را انتخاب کنید:</p>
+        <div class="welcome-header">
+          <p class="welcome-eyebrow">👋 سلام!</p>
+          <h2>به آزمون خوش آمدید</h2>
+          <h3>در این آزمون چند سوال از شما پرسیده می‌شود، آماده‌اید؟</h3>
+        </div>
 
-    <button class="difficulty-btn" data-level="easy">آسون 😊</button>
-    <button class="difficulty-btn" data-level="medium">متوسط 😑</button>
-    <button class="difficulty-btn" data-level="hard">سخت 😥</button>
+        <div class="info-row">
 
-    <br><br>
-    <br><br>
-        <button id="start-btn">شروع آزمون</button>
-    </div>
+          <div class="stats-box">
+            <div class="stat-item">
+              <span class="stat-icon">📋</span>
+              <div>
+                <div class="stat-value">۱۰ سوال</div>
+                <div class="stat-label">تعداد سوالات</div>
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">⏱️</span>
+              <div>
+                <div class="stat-value">حدود ۳ دقیقه</div>
+                <div class="stat-label">زمان تقریبی</div>
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">🏆</span>
+              <div>
+                <div class="stat-value">امتیازدهی دارد</div>
+                <div class="stat-label">امتیاز ثبت می‌شود</div>
+              </div>
+            </div>
+          </div>
 
-    <div id="quiz-screen" style="display: none;">
+          <div class="difficulty-box">
+            <p class="section-label">🎚️ انتخاب سطح سختی</p>
+            <div class="difficulty-cards">
+              <button class="difficulty-btn" data-level="easy">
+                <span class="difficulty-icon">😊</span>
+                <span>آسون</span>
+              </button>
+              <button class="difficulty-btn" data-level="medium">
+                <span class="difficulty-icon">⭐</span>
+                <span>متوسط</span>
+              </button>
+              <button class="difficulty-btn" data-level="hard">
+                <span class="difficulty-icon">🔥</span>
+                <span>سخت</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="section-label category-label">دسته‌بندی مورد نظر خود را انتخاب کنید:</p>
+
+        <div class="category-grid">
+          <button class="category-btn" data-category="computer">
+            <span class="category-arrow">‹</span>
+            <span class="category-info">
+              <span class="category-name">کامپیوتر</span>
+              <span class="category-count">۹۰ سوال</span>
+            </span>
+            <span class="category-icon">💻</span>
+          </button>
+
+          <button class="category-btn" data-category="general">
+            <span class="category-arrow">‹</span>
+            <span class="category-info">
+              <span class="category-name">عمومی</span>
+              <span class="category-count">۹۰ سوال</span>
+            </span>
+            <span class="category-icon">🌍</span>
+          </button>
+
+          <button class="category-btn" data-category="history">
+            <span class="category-arrow">‹</span>
+            <span class="category-info">
+              <span class="category-name">تاریخ</span>
+              <span class="category-count">۹۰ سوال</span>
+            </span>
+            <span class="category-icon">📜</span>
+          </button>
+
+          <button class="category-btn" data-category="sport">
+            <span class="category-arrow">‹</span>
+            <span class="category-info">
+              <span class="category-name">ورزش</span>
+              <span class="category-count">۹۰ سوال</span>
+            </span>
+            <span class="category-icon">⚽</span>
+          </button>
+        </div>
+
+        <button id="start-btn" class="start-btn">شروع آزمون 🚀</button>
+
+        <p class="footer-note">🛡️ اطلاعات شما محفوظ و ایمن خواهد بود</p>
+
+      </div>
+
+      <div class="container" id="quiz-screen" style="display: none;">
         <center>
             <h2>آزمون آنلاین</h2>
             <br>
@@ -65,19 +150,15 @@
         <button id="restart-btn" style="display: none;">شروع دوباره</button>
      <br>
      <br>
-        
+
      <div class="progress-container">
         <div id="progress-bar"></div>
     </div>
-     
-        <button class="add-qus" onclick="window.location.href='add-question.html'">افزودن سوال جدید</button>
-     
+
       </div>
 
-    <br>
-    <br>
-   
-</div>
+    </div>
+
      <script src="script.js"></script>
   </body>
 </html>

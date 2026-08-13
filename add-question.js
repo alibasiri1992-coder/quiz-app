@@ -1,43 +1,159 @@
-const form = document.getElementById("add-question-form");
-const messageElement = document.getElementById("form-message");
-
 // همون منطق تشخیص لوکال/Render که تو script.js هست، اینجا هم می‌ذاریم
 // تا وقتی رو لوکال تست می‌کنی، فرم به سرور لوکالت وصل بشه نه به Render
 const isLocal = location.hostname === "localhost"
     || location.hostname === "127.0.0.1"
     || location.protocol === "file:";
 
-const API_URL = isLocal
-    ? "http://localhost:3000/api/questions"
-    : "https://quiz-app-sim9.onrender.com/api/questions";
+const API_BASE = isLocal
+    ? "http://localhost:3000"
+    : "https://quiz-app-sim9.onrender.com";
+
+const API_URL = API_BASE + "/api/questions";
+
+// --- چک می‌کنیم کاربر لاگین کرده یا نه؛ اگه نه، برمی‌گردونیمش به صفحه‌ی لاگین ---
+const logoutBtn = document.getElementById("logout-btn");
+const pageContainer = document.getElementById("add-question-page");
+
+fetch(API_BASE + "/api/me", { credentials: "include" })
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
+        if (!data.loggedIn) {
+            window.location.href = "login.html";
+            return;
+        }
+        // لاگینه: حالا و فقط حالا صفحه رو نشون بده
+        pageContainer.style.display = "";
+        logoutBtn.style.display = "inline-block";
+    })
+    .catch(function () {
+        window.location.href = "login.html";
+    });
+
+logoutBtn.addEventListener("click", function () {
+    fetch(API_BASE + "/api/logout", { method: "POST", credentials: "include" })
+        .then(function () {
+            window.location.href = "login.html";
+        });
+});
+
+// --- تم تاریک/روشن (همون رفتار index.html) ---
+const themeToggle = document.getElementById("theme-toggle");
+themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
+
+// --- عناصر فرم ---
+const form = document.getElementById("add-question-form");
+const messageElement = document.getElementById("form-message");
+const questionInput = document.getElementById("new-question");
+const answerCards = Array.from(document.querySelectorAll(".answer-input-card"));
+const categoryPills = Array.from(document.querySelectorAll("#category-pills .pill-btn"));
+const difficultyPills = Array.from(document.querySelectorAll("#difficulty-pills .pill-btn"));
+
+let correctIndex = null;
+let selectedCategory = null;
+let selectedDifficulty = null;
+
+// --- انتخاب گزینه‌ی درست: با زدن تیک کنار هر گزینه ---
+answerCards.forEach(function (card) {
+    const checkBtn = card.querySelector(".answer-check");
+    checkBtn.addEventListener("click", function () {
+        correctIndex = Number(card.dataset.index);
+        answerCards.forEach(function (c) {
+            c.classList.toggle("is-correct", Number(c.dataset.index) === correctIndex);
+        });
+    });
+});
+
+// --- انتخاب دسته‌بندی (فقط یکی فعال) ---
+categoryPills.forEach(function (pill) {
+    pill.addEventListener("click", function () {
+        selectedCategory = pill.dataset.category;
+        categoryPills.forEach(function (p) { p.classList.toggle("active", p === pill); });
+    });
+});
+
+// --- انتخاب سطح سختی (فقط یکی فعال) ---
+difficultyPills.forEach(function (pill) {
+    pill.addEventListener("click", function () {
+        selectedDifficulty = pill.dataset.level;
+        difficultyPills.forEach(function (p) { p.classList.toggle("active", p === pill); });
+    });
+});
+
+function showMessage(text, type) {
+    messageElement.textContent = text;
+    messageElement.className = "form-message fade-in " + (type === "error" ? "is-error" : "is-success");
+}
+
+function resetForm() {
+    form.reset();
+    correctIndex = null;
+    selectedCategory = null;
+    selectedDifficulty = null;
+    answerCards.forEach(function (c) { c.classList.remove("is-correct"); });
+    categoryPills.forEach(function (p) { p.classList.remove("active"); });
+    difficultyPills.forEach(function (p) { p.classList.remove("active"); });
+}
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    const answerValues = answerCards.map(function (card) {
+        return card.querySelector(".answer-input").value.trim();
+    });
+
+    // اعتبارسنجی سمت فرانت، قبل از اینکه چیزی به سرور بفرستیم
+    if (!questionInput.value.trim()) {
+        showMessage("متن سوال رو وارد کن", "error");
+        return;
+    }
+    if (answerValues.some(function (a) { return !a; })) {
+        showMessage("هر ۴ گزینه باید پر باشن", "error");
+        return;
+    }
+    if (correctIndex === null) {
+        showMessage("یکی از گزینه‌ها رو به‌عنوان جواب درست تیک بزن", "error");
+        return;
+    }
+    if (!selectedCategory) {
+        showMessage("یه دسته‌بندی انتخاب کن", "error");
+        return;
+    }
+    if (!selectedDifficulty) {
+        showMessage("یه سطح سختی انتخاب کن", "error");
+        return;
+    }
+
     const newQuestion = {
-        question: document.getElementById("new-question").value,
-        answers: [
-            document.getElementById("answer1").value,
-            document.getElementById("answer2").value,
-            document.getElementById("answer3").value,
-            document.getElementById("answer4").value
-        ],
-        correct: document.getElementById("correct-answer").value,
-        category: document.getElementById("new-category").value,
-        difficulty: document.getElementById("new-difficulty").value
+        question: questionInput.value.trim(),
+        answers: answerValues,
+        correct: answerValues[correctIndex],
+        category: selectedCategory,
+        difficulty: selectedDifficulty
     };
 
     fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify(newQuestion)
     })
-        .then(response => response.json())
-        .then(data => {
-            messageElement.textContent = data.message;
-            form.reset();
+        .then(function (response) {
+            return response.json().then(function (data) {
+                return { ok: response.ok, data: data };
+            });
         })
-        .catch(error => {
-            messageElement.textContent = "خطا در ارسال سوال";
+        .then(function (result) {
+            if (!result.ok) {
+                showMessage(result.data.error || "سرور این سوال رو قبول نکرد", "error");
+                return;
+            }
+            showMessage(result.data.message || "سوال با موفقیت اضافه شد ✅", "success");
+            resetForm();
+        })
+        .catch(function () {
+            showMessage("خطا در ارسال سوال، دوباره امتحان کن", "error");
         });
 });

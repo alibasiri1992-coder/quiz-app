@@ -107,9 +107,9 @@ themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
     // بررسی اینکه الان توی کدوم حالت هستیم
     if (document.body.classList.contains("dark-mode")) {
-        themeToggle.textContent = " حالت روشن☀️";
+        themeToggle.textContent = "☀️";
     } else {
-        themeToggle.textContent = " حالت تاریک🌙";
+        themeToggle.textContent = "🌙";
     }
 });
 startButton.addEventListener("click", function () {

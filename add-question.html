@@ -4,46 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>افزودن سوال جدید</title>
+    <title>افزودن سوال جدید | QuizMaster</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
+    <nav class="navbar">
+        <div class="navbar-logo">QuizMaster</div>
+        <div class="navbar-actions">
+            <button id="logout-btn" class="logout-btn" style="display:none;">خروج</button>
+            <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+        </div>
+    </nav>
 
-        <h2>افزودن سوال جدید</h2>
+    <div class="page-wrap">
 
-        <form id="add-question-form">
-            <input type="text" id="new-question" placeholder="متن سوال" required><br><br>
-            <input type="text" id="answer1" placeholder="گزینه ۱" required><br><br>
-            <input type="text" id="answer2" placeholder="گزینه ۲" required><br><br>
-            <input type="text" id="answer3" placeholder="گزینه ۳" required><br><br>
-            <input type="text" id="answer4" placeholder="گزینه ۴" required><br><br>
-            <input type="text" id="correct-answer" placeholder="جواب درست (دقیقاً مثل یکی از گزینه‌ها)" required><br><br>
+        <div class="container" id="add-question-page" style="display:none;">
 
-            <label for="new-category">دسته‌بندی:</label><br>
-            <select id="new-category" required>
-                <option value="general">عمومی</option>
-                <option value="computer">کامپیوتر</option>
-                <option value="history">تاریخ</option>
-                <option value="sport">ورزش</option>
-            </select><br><br>
+            <div class="welcome-header">
+                <p class="welcome-eyebrow">➕ مدیریت سوالات</p>
+                <h2>افزودن سوال جدید</h2>
+                <h3>سوال و گزینه‌ها رو بنویس، بعد روی گزینه‌ی درست بزن</h3>
+            </div>
 
-            <label for="new-difficulty">سطح سختی:</label><br>
-            <select id="new-difficulty" required>
-                <option value="easy">آسون</option>
-                <option value="medium">متوسط</option>
-                <option value="hard">سخت</option>
-            </select><br><br>
+            <form id="add-question-form" novalidate>
 
-            <button type="submit">اضافه کردن سوال</button>
-        </form>
+                <div class="field-group">
+                    <label class="section-label" for="new-question">متن سوال</label>
+                    <textarea id="new-question" class="text-input question-textarea"
+                        placeholder="مثلاً: پایتخت ایران کجاست؟" rows="2"></textarea>
+                </div>
 
-        <p id="form-message"></p>
+                <p class="section-label answers-label">گزینه‌ها رو وارد کن، جواب درست رو با تیک مشخص کن ✅</p>
 
-        <button class="add-qus" onclick="window.location.href='index.html'">بازگشت به آزمون</button>
+                <div class="answers-grid" id="answers-grid">
+                    <div class="answer-input-card" data-index="0">
+                        <span class="answer-order">۱</span>
+                        <input type="text" class="answer-input" placeholder="گزینه ۱">
+                        <button type="button" class="answer-check" aria-label="این گزینه درسته">✓</button>
+                    </div>
+                    <div class="answer-input-card" data-index="1">
+                        <span class="answer-order">۲</span>
+                        <input type="text" class="answer-input" placeholder="گزینه ۲">
+                        <button type="button" class="answer-check" aria-label="این گزینه درسته">✓</button>
+                    </div>
+                    <div class="answer-input-card" data-index="2">
+                        <span class="answer-order">۳</span>
+                        <input type="text" class="answer-input" placeholder="گزینه ۳">
+                        <button type="button" class="answer-check" aria-label="این گزینه درسته">✓</button>
+                    </div>
+                    <div class="answer-input-card" data-index="3">
+                        <span class="answer-order">۴</span>
+                        <input type="text" class="answer-input" placeholder="گزینه ۴">
+                        <button type="button" class="answer-check" aria-label="این گزینه درسته">✓</button>
+                    </div>
+                </div>
+
+                <div class="info-row form-info-row">
+                    <div class="pill-field">
+                        <p class="section-label">دسته‌بندی</p>
+                        <div class="pill-group" id="category-pills">
+                            <button type="button" class="pill-btn" data-category="general">🌍 عمومی</button>
+                            <button type="button" class="pill-btn" data-category="computer">💻 کامپیوتر</button>
+                            <button type="button" class="pill-btn" data-category="history">📜 تاریخ</button>
+                            <button type="button" class="pill-btn" data-category="sport">⚽ ورزش</button>
+                        </div>
+                    </div>
+                    <div class="pill-field">
+                        <p class="section-label">سطح سختی</p>
+                        <div class="pill-group" id="difficulty-pills">
+                            <button type="button" class="pill-btn" data-level="easy">😊 آسون</button>
+                            <button type="button" class="pill-btn" data-level="medium">⭐ متوسط</button>
+                            <button type="button" class="pill-btn" data-level="hard">🔥 سخت</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="start-btn submit-btn">افزودن سوال ✅</button>
+
+            </form>
+
+            <p id="form-message" class="form-message"></p>
+
+            <button type="button" class="back-btn" onclick="window.location.href='index.html'">‹ بازگشت به آزمون</button>
+
+        </div>
 
     </div>
 

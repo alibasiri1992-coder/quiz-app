@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود مدیر | QuizMaster</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">QuizMaster</div>
+        <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+    </nav>
+
+    <div class="page-wrap">
+
+        <div class="container" id="login-page">
+
+            <div class="welcome-header">
+                <p class="welcome-eyebrow">🔒 دسترسی مدیر</p>
+                <h2>ورود</h2>
+                <h3>برای افزودن سوال، اول باید وارد بشی</h3>
+            </div>
+
+            <form id="login-form" novalidate>
+
+                <div class="field-group">
+                    <label class="section-label" for="username">نام کاربری</label>
+                    <input type="text" id="username" class="text-input" placeholder="admin" autocomplete="username">
+                </div>
+
+                <div class="field-group">
+                    <label class="section-label" for="password">رمز عبور</label>
+                    <input type="password" id="password" class="text-input" placeholder="••••••••"
+                        autocomplete="current-password">
+                </div>
+
+                <button type="submit" class="start-btn submit-btn">ورود ✅</button>
+
+            </form>
+
+            <p id="form-message" class="form-message"></p>
+
+            <button type="button" class="back-btn" onclick="window.location.href='index.html'">‹ بازگشت به آزمون</button>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
