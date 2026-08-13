@@ -36,8 +36,6 @@ form.addEventListener("submit", function (event) {
     fetch(API_BASE + "/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        // credentials: "include" لازمه تا مرورگر کوکی session رو قبول کنه و نگه داره
-        credentials: "include",
         body: JSON.stringify({
             username: usernameInput.value.trim(),
             password: passwordInput.value
@@ -53,6 +51,8 @@ form.addEventListener("submit", function (event) {
                 showMessage(result.data.error || "ورود ناموفق بود", "error");
                 return;
             }
+            // توکن رو تو localStorage ذخیره می‌کنیم تا دفعه بعد هم لاگین بمونیم
+            localStorage.setItem("adminToken", result.data.token);
             showMessage("ورود موفق ✅ در حال انتقال...", "success");
             setTimeout(function () {
                 window.location.href = "add-question.html";

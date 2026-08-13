@@ -10,30 +10,23 @@ const API_BASE = isLocal
 
 const API_URL = API_BASE + "/api/questions";
 
-// --- چک می‌کنیم کاربر لاگین کرده یا نه؛ اگه نه، برمی‌گردونیمش به صفحه‌ی لاگین ---
+// --- چک می‌کنیم توکن لاگین تو localStorage هست یا نه؛ اگه نه، برمی‌گردونیمش به صفحه‌ی لاگین ---
 const logoutBtn = document.getElementById("logout-btn");
 const pageContainer = document.getElementById("add-question-page");
+const adminToken = localStorage.getItem("adminToken");
 
-fetch(API_BASE + "/api/me", { credentials: "include" })
-    .then(function (response) { return response.json(); })
-    .then(function (data) {
-        if (!data.loggedIn) {
-            window.location.href = "login.html";
-            return;
-        }
-        // لاگینه: حالا و فقط حالا صفحه رو نشون بده
-        pageContainer.style.display = "";
-        logoutBtn.style.display = "inline-block";
-    })
-    .catch(function () {
-        window.location.href = "login.html";
-    });
+if (!adminToken) {
+    window.location.href = "login.html";
+} else {
+    // توکن هست: صفحه رو نشون بده. اگه توکن جعلی یا منقضی باشه،
+    // سرور موقع ارسال سوال با 401 ردش می‌کنه و بهمون خبر می‌ده.
+    pageContainer.style.display = "";
+    logoutBtn.style.display = "inline-block";
+}
 
 logoutBtn.addEventListener("click", function () {
-    fetch(API_BASE + "/api/logout", { method: "POST", credentials: "include" })
-        .then(function () {
-            window.location.href = "login.html";
-        });
+    localStorage.removeItem("adminToken");
+    window.location.href = "login.html";
 });
 
 // --- تم تاریک/روشن (همون رفتار index.html) ---
@@ -136,11 +129,19 @@ form.addEventListener("submit", function (event) {
 
     fetch(API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + localStorage.getItem("adminToken")
+        },
         body: JSON.stringify(newQuestion)
     })
         .then(function (response) {
+            if (response.status === 401) {
+                // توکن منقضی یا نامعتبره؛ برگردون به لاگین
+                localStorage.removeItem("adminToken");
+                window.location.href = "login.html";
+                return Promise.reject("unauthorized");
+            }
             return response.json().then(function (data) {
                 return { ok: response.ok, data: data };
             });
@@ -153,7 +154,8 @@ form.addEventListener("submit", function (event) {
             showMessage(result.data.message || "سوال با موفقیت اضافه شد ✅", "success");
             resetForm();
         })
-        .catch(function () {
+        .catch(function (err) {
+            if (err === "unauthorized") return;
             showMessage("خطا در ارسال سوال، دوباره امتحان کن", "error");
         });
 });
